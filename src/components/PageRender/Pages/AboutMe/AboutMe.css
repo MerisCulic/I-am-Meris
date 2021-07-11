@@ -1,0 +1,16 @@
+
+.AboutMe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10vw;
+    position: relative;
+    z-index: 2;
+}
+
+@media (max-width: 580px) {
+    .AboutMe {
+        padding-top: 150px;
+        
+    }
+}  

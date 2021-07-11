@@ -1,0 +1,69 @@
+.navbar {
+    position: fixed;
+    font-family: 'Orbitron', sans-serif;
+    color: floralwhite;
+    background-color: teal;
+    width: 100%;
+    height: 90px;
+    z-index: 3;
+}
+
+.navbar img {
+    transition: transform .4s ease-in-out;
+}
+
+#navbarLogo {
+    width: 120px;
+    height: auto;
+    animation: 
+        rollIn 1s backwards 2s,
+        pulse 1s 4s;
+    transition: transform 2s ease-in-out;
+}
+
+.topbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.links {
+    display: flex;
+}
+
+.sidebar {
+    margin-top: 25vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar img {
+    padding: 5px;
+    width: 90px;
+    height: 90px;
+}
+
+.description {
+    display: flex;
+    align-items: center; 
+    width: 100px;
+    background-color: teal;
+}
+
+.description img:hover {
+    transform: rotate(13deg);
+}
+
+.description p {
+    color: black;
+    background-color: whitesmoke;
+    border-radius: 0 10px 10px 0;
+}
+
+.webdev {
+    border-top-right-radius: 30px;
+}
+
+.photography {
+    border-bottom-right-radius: 30px;
+}

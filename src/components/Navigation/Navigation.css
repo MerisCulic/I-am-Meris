@@ -1,0 +1,147 @@
+
+.navbar {
+  z-index: 1;
+  position: fixed;
+  font-family: 'Orbitron', sans-serif;
+  color: floralwhite;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(90px,15vw));
+  gap: 10px;
+  grid-template-rows: repeat(4, auto);
+}
+
+#navbarLogo {
+  /*float: left;
+  display: block;*/
+  grid-column: 1;
+  grid-row: 1;
+  animation: 
+    rollIn 1s backwards 2s,
+    pulse 1s 4s;
+  transition: transform 2s ease-in-out;
+}
+
+.spin {
+  transform: rotate(360deg);
+}
+
+.navbar img {
+  transition: transform .4s ease-in-out;
+  width: 10vw;
+  max-width: 100px;
+  height: auto;
+}
+
+.description {
+  display: flex;
+  align-items: center; 
+}
+
+.expandable {
+  background-color: black;
+  display: none;
+}
+
+.expandable img:hover {
+  transform: rotate(13deg);
+}
+
+#aboutme {
+  grid-column: 2;
+  grid-row: 1;
+  animation: fadeInLeft 1s backwards ease-out 0.3s;
+}
+
+#contact {
+  grid-column: 3;
+  grid-row: 1;
+  animation: fadeInLeft 1s backwards ease-out 0.6s;
+}
+
+#guestbook {
+  grid-column: 4;
+  grid-row: 1;
+  animation: fadeInLeft 1s backwards ease-out 0.9s;
+}
+
+.closed #aboutme {
+  animation: fadeOutLeft 1s forwards ease-in-out 0.9s;
+}
+
+.closed #contact {
+  animation: fadeOutLeft 1s forwards ease-in-out 0.6s;
+}
+
+.closed #guestbook {
+  animation: fadeOutLeft 1s forwards ease-in-out 0.3s;
+}
+
+.webdev {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+#webdevIcon {
+  animation: fadeInDown 1s backwards ease-out 0.3s;
+}
+
+.graphicdesign {
+  grid-column: 1;
+  grid-row: 3;
+}
+
+#graphicdesignIcon {
+  animation: fadeInDown 1s backwards ease-out 0.6s;
+}
+
+.photography {
+  grid-column: 1;
+  grid-row: 4;
+}
+
+#photographyIcon {
+  animation: fadeInDown 1s backwards ease-out 0.9s;
+}
+
+.closed #webdevIcon {
+  animation: fadeOutUp 1s forwards ease-in 0.9s;
+}
+
+.closed #graphicdesignIcon {
+  animation: fadeOutUp 1s forwards ease-in 0.6s;
+}
+
+.closed #photographyIcon {
+  animation: fadeOutUp 1s forwards ease-in 0.3s;
+}
+
+@media (max-width: 780px) {
+  .navbar img {
+      width: 25vw;
+  }
+
+  .navbar p {
+    font-size: 1.5rem;
+    padding: 0.8rem;
+  }
+
+}
+
+@media (max-width: 580px) {
+  .navbar img {
+      width: 20vw;
+  }
+
+  .navbar p {
+    font-size: 1rem;
+    padding: 0.6rem;
+  }
+
+}
+
+
+
+
+
+
+

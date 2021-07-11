@@ -1,0 +1,39 @@
+.WebDevelopment {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10vw;
+    position: relative;
+    z-index: 2;
+}
+
+.applistitem {
+    display: flex;
+}
+
+.viewCode {
+    background-color: gray;
+    color: whitesmoke;
+    border-radius: 10px;
+    padding: 1em;
+    width:fit-content;
+}
+
+@media (max-width: 580px) {
+    .WebDevelopment {
+        padding-top: 150px;
+    }
+
+    .applist {
+        text-align: center;
+    }
+
+    .applistitem {
+        display: block;
+    }
+
+    .applogo {
+        width: 90%;
+        height: auto;
+    }
+}  

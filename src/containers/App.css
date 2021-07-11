@@ -1,0 +1,12 @@
+/*Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
+/*Backgrounds*/
+
+body {
+    background-image: url("bg-table.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}

@@ -1,0 +1,20 @@
+.Photography {
+    
+    padding: 10vw;
+    position: relative;
+    z-index: 2;
+    height:max-content;
+}
+
+
+
+@media (max-width: 580px) {
+    .Photography {
+        padding-top: 150px;
+        
+    }
+
+    .gallery {
+        width: 80%;
+    }
+}  
