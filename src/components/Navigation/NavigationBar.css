@@ -31,18 +31,6 @@
     display: flex;
 }
 
-.sidebar {
-    margin-top: 25vh;
-    display: flex;
-    flex-direction: column;
-}
-
-.sidebar img {
-    padding: 5px;
-    width: 90px;
-    height: 90px;
-}
-
 .description {
     display: flex;
     align-items: center; 
@@ -60,10 +48,3 @@
     border-radius: 0 10px 10px 0;
 }
 
-.webdev {
-    border-top-right-radius: 30px;
-}
-
-.photography {
-    border-bottom-right-radius: 30px;
-}

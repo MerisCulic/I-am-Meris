@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import NewNavigation from '../components/Navigation/NewNavigation';
+import NavigationBar from '../components/Navigation/NavigationBar';
 import PageRender from '../components/PageRender/PageRender';
 import Homepage from '../components/Homepage/Homepage';
 import './App.css';
@@ -23,7 +23,7 @@ class App extends Component {
     const route = this.state.route;
     return (
       <div className="App">
-        <NewNavigation onRouteChange={this.onRouteChange} />
+        <NavigationBar onRouteChange={this.onRouteChange} />
         <Homepage onRouteChange={this.onRouteChange} />
         <PageRender route={route}/>
       </div>
