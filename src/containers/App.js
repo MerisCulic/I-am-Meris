@@ -1,13 +1,21 @@
 import React, {Component} from 'react';
 import NavigationBar from '../components/Navigation/NavigationBar';
-import PageRender from '../components/PageRender/PageRender';
 import Homepage from '../components/Homepage/Homepage';
+import NASA from '../components/Pages/NASA/NASA';
+import AboutMe from '../components/Pages/AboutMe/AboutMe';
+import Contact from '../components/Pages/Contact/Contact';
+import Guestbook from '../components/Pages/Guestbook/Guestbook';
+import WebDevelopment from '../components/Pages/WebDevelopment/WebDevelopment';
+import GraphicDesign from '../components/Pages/GraphicDesign/GraphicDesign';
+import Photography from '../components/Pages/Photography/Photography';
 import './App.css';
 
 
 const initialState = {
   route: 'home',
+  gallery: 'weddings'
 }
+
 
 class App extends Component {
   constructor() {
@@ -19,13 +27,40 @@ class App extends Component {
     this.setState({route: route})
   }
 
+  onGalleryChange = (gallery) => {
+    this.setState({gallery: gallery})
+  }
+
   render() {
-    const route = this.state.route;
+    const {route, gallery} = this.state;
+    console.log('render', route, gallery);
+
+    let page;
+    if (route === 'home') {
+        page = <Homepage onRouteChange={this.onRouteChange}/>;
+    } else if (route === 'NASA'){
+        page = <NASA />;
+    } else if (route === 'aboutme'){
+        page = <AboutMe />;
+    } else if (route === 'contact'){
+        page = <Contact />;
+    } else if (route === 'guestbook'){
+        page = <Guestbook />;
+    } else if (route === 'webdev'){
+        page = <WebDevelopment />;
+    } else if (route === 'graphicdesign'){
+        page = <GraphicDesign />;
+    } else if (route === 'photography'){
+        page = <Photography gallery={gallery} onGalleryChange={this.onGalleryChange}/>;
+    }
+
     return (
       <div className="App">
         <NavigationBar onRouteChange={this.onRouteChange} />
         <Homepage onRouteChange={this.onRouteChange} />
-        <PageRender route={route}/>
+        <div>
+          {page}
+        </div>
       </div>
     );
   }
