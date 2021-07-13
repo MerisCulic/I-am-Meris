@@ -3,7 +3,7 @@ body {
     z-index:1;
 }
 
-.navigation {
+.projectsNavigation {
     position: fixed;
     top: 50%;
     left: 50%;
@@ -15,15 +15,22 @@ body {
     bottom: 2vh;
     right: 2vw;
     float: right;
-    max-width: 400px;
-    height: auto;
+    height: 25vh;
+    min-height: 127px; 
+    max-height:254px
 }
 
 @media (max-width: 580px) {
     #NASApatch {
-        width: 200px;
+        max-height: 200px;
+        width: auto;
         bottom: 10px;
         right: 10px;
         padding: 0;
+    }
+
+    .projectsNavigation img {
+        width: 90px;
+        height: auto;
     }
 }  

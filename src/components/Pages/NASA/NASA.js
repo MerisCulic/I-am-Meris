@@ -23,8 +23,8 @@ export default function NASA() {
   
     return (
         <>
-        <div className="NASA tc">
-            <div className="APOD bg-light-green pa2 ba bw1 br4 shadow-3 child">
+        <div className="NASA">
+            <div className="tc gallery bg-light-green pa2 br4 fl w-100 shadow-3">
                 <h1 className="dib pa2">Astronomy Picture Of The Day</h1>
                 <img id="NASAIcon" src={NASAicon} alt="" width="90px" height="90px"/>
                 <div className="bg-washed-green pa2 br4">

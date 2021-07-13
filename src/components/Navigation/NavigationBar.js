@@ -12,7 +12,6 @@ const NavigationBar = ({onRouteChange}) => {
                 <div className="links">
                     <p id="aboutme" onClick={() => onRouteChange("aboutme")} className="f4 link dim pa2 pr3 pointer">About me</p>
                     <p id="contact" onClick={() => onRouteChange("contact")} className="f4 link dim pa2 pr3 pointer">Contact</p>
-                    <p id="guestbook" onClick={() => onRouteChange("guestbook")} className="f4 link dim pa2 pr3 pointer">Guestbook</p>
                 </div>
             </div>
         </div>

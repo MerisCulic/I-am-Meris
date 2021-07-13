@@ -238,13 +238,13 @@ const Photography =({gallery, onGalleryChange}) => {
     return (
         <>
         <div className="Photography">
-            <div className="gallery bg-light-green pa2 br4 fl w-100 bw1 ba shadow-3">
+            <div className="gallery bg-light-green pa2 br4 fl w-100 shadow-3">
                 <h1 className="dib pa2 v-top">Photography</h1>
-                <div className="applist bg-washed-green pa2 br4 fl w-100">
-                <div className="flex justify-around">
+                <div className="bg-washed-green pa2 br4 fl w-100">
+                <div className="subgalleries flex justify-around">
+                        <h3 className="pointer dim pa2" onClick={() => onGalleryChange("weddings")}>Weddings</h3>
                         <h3 className="pointer dim pa2" onClick={() => onGalleryChange("products")}>Products</h3>
                         <h3 className="pointer dim pa2" onClick={() => onGalleryChange("meetings")}>Meetings</h3>
-                        <h3 className="pointer dim pa2" onClick={() => onGalleryChange("weddings")}>Weddings</h3>
                     </div>
                     <ImageGallery items={images}/>
                 </div>

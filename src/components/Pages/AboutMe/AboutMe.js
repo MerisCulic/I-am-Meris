@@ -1,17 +1,17 @@
 import React from 'react';
 import './AboutMe.css';
-import MerisPhoto from "./Meris.jpg";
-import MMM from "./MMM.png";
-import WBW from "./WBW.png";
-import Startalk from "./Startalk.jpg";
-import TimFerris from "./TimFerris.jpg";
-import ChooseFi from "./ChooseFi.png";
+import MerisPhoto from "./Images/Meris.jpg";
+import MMM from "./Images/MMM.png";
+import WBW from "./Images/WBW.png";
+import Startalk from "./Images/Startalk.jpg";
+import TimFerris from "./Images/TimFerris.jpg";
+import ChooseFi from "./Images/ChooseFi.png";
 
 const AboutMe = () => {
     return (
         <>
         <div className="AboutMe">
-            <div className="bg-light-green pa2 ba bw1 br4 shadow-3">
+            <div className="gallery bg-light-green pa2 br4 fl w-100 shadow-3">
                 <img id="MerisPhoto" src={MerisPhoto} alt="" width="90px" height="auto" className="pa2 br4"/>
                 <h1 className="dib pa2 v-top">Hello!</h1>
                 <div className="bg-washed-green pa2 br4">
@@ -55,7 +55,6 @@ const AboutMe = () => {
                             onClick={()=> window.open("https://www.choosefi.com/100-welcome-to-the-fi-community/", "_blank")}
                         />
                     </ul>
-                    
                 </div>
                 <h4 className="tc"><i>This website was made with love and powered by coffee</i></h4>
             </div>

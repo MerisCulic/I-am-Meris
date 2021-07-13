@@ -9,9 +9,9 @@ const WebDevelopment = () => {
     return (
         <>
         <div className="WebDevelopment">
-            <div className="bg-light-green pa2 ba bw1 br4 shadow-3">
-                <h1 className="dib pa2 v-top">Web Development</h1>
-                <div className="applist bg-washed-green pa2 br4 fl w-100">
+        <div className="gallery bg-light-green pa2 br4 fl w-100 shadow-3">
+                <h1 className="dib pa2 v-top">Web development</h1>
+                <div className="bg-washed-green pa2 br4 fl w-100">
                     <div className="applistitem">
                         <img src={NinjaTech} alt="" width="auto" className="applogo ma2 pointer br3 shadow-3 grow"
                             onClick={()=> window.open("https://ninja-tech-forum.herokuapp.com/", "_blank")}

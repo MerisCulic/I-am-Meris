@@ -1,12 +1,31 @@
 /*Fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
 
-/*Backgrounds*/
+@import "~react-image-gallery/styles/css/image-gallery.css";
+
 
 body {
-    background-image: url("bg-table.jpg");
+    background-image: url("woodentexture.jpg");
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
-
 }
+
+.Page {
+    padding: 10vw;
+    position: relative;
+    z-index: 2;
+    height: fit-content;
+    width: auto;
+}
+
+.gallery {
+    margin-bottom: 30px;
+}
+
+@media (max-width: 1024px) {
+    .Page {
+        padding-top: 150px;
+    }
+}  
+ 

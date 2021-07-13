@@ -8,17 +8,17 @@ import "./Homepage.css";
 const Homepage = ({onRouteChange}) => {
     return (
         <div>
-            <div className="navigation">
+            <div className="projectsNavigation">
                 <div className="flex space-around">
-                    <div className="hide-child ma4" onClick={() => onRouteChange("webdev")}>
+                    <div className="hide-child ma1" onClick={() => onRouteChange("webdev")}>
                         <img id="webdevIcon" className="pointer" src={WebDevLogo} alt=""/>
                         <p className="bg-washed-green br3 pa2 pointer child tc">Web development</p>
                     </div>
-                    <div className="hide-child ma4" onClick={() => onRouteChange("graphicdesign")}>
+                    <div className="hide-child ma1" onClick={() => onRouteChange("graphicdesign")}>
                         <img id="graphicdesignIcon" className="pointer" src={GraphicDesignLogo} alt=""/>
-                        <p className="bg-washed-green br3 pa2 pointer child tc">Graphic design</p>
+                        <p className="bg-washed-green br3 ma4 pa2 pointer child tc">Graphic design</p>
                     </div>
-                    <div className="hide-child ma4" onClick={() => onRouteChange("photography")}>
+                    <div className="hide-child ma1" onClick={() => onRouteChange("photography")}>
                         <img id="photographyIcon" className="pointer" src={PhotographyLogo} alt=""/>
                         <p className="bg-washed-green br3 pa2 pointer child tc">Photography</p>
                     </div>

@@ -4,7 +4,6 @@ import Homepage from '../components/Homepage/Homepage';
 import NASA from '../components/Pages/NASA/NASA';
 import AboutMe from '../components/Pages/AboutMe/AboutMe';
 import Contact from '../components/Pages/Contact/Contact';
-import Guestbook from '../components/Pages/Guestbook/Guestbook';
 import WebDevelopment from '../components/Pages/WebDevelopment/WebDevelopment';
 import GraphicDesign from '../components/Pages/GraphicDesign/GraphicDesign';
 import Photography from '../components/Pages/Photography/Photography';
@@ -44,8 +43,6 @@ class App extends Component {
         page = <AboutMe />;
     } else if (route === 'contact'){
         page = <Contact />;
-    } else if (route === 'guestbook'){
-        page = <Guestbook />;
     } else if (route === 'webdev'){
         page = <WebDevelopment />;
     } else if (route === 'graphicdesign'){
@@ -58,8 +55,8 @@ class App extends Component {
       <div className="App">
         <NavigationBar onRouteChange={this.onRouteChange} />
         <Homepage onRouteChange={this.onRouteChange} />
-        <div>
-          {page}
+        <div className="Page">
+            {page}
         </div>
       </div>
     );

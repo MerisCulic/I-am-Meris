@@ -3,22 +3,9 @@ body {
     background-color: #222222;
 }
 
-.NASA {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10vw;
-    position: relative;
-    z-index: 2;
-}
-
 .nasa-photo img {
     width: 100%;
     object-fit: contain;
-}
-
-.APOD {
-    background-color: rgb(253, 253, 253);
 }
 
 

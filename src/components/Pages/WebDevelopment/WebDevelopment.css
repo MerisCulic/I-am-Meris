@@ -1,11 +1,4 @@
-.WebDevelopment {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10vw;
-    position: relative;
-    z-index: 2;
-}
+
 
 .applistitem {
     display: flex;
