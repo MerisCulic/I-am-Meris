@@ -70,7 +70,7 @@ const WebDevelopment = () => {
                             onClick={()=> window.open("https://guess-the-secret-number-game.herokuapp.com/", "_blank")}
                         />
                         <div className="ma2">
-                            <p>See how many times it takes you to guess the correcr number (Smart Ninja training).</p>
+                            <p>See how many times it takes you to guess the correct number (Smart Ninja training).</p>
                             <h4 className="viewCode pointer shadow-3 grow" 
                                 onClick={()=> window.open("https://github.com/MerisCulic/Guess_the_number", "_blank")}>
                                 View Code
