@@ -2,6 +2,7 @@ import React from 'react';
 import './AboutMe.css';
 import MerisPhoto from "./Images/Meris.jpg";
 import MMM from "./Images/MMM.png";
+import ORG from "./Images/ORG.png";
 import WBW from "./Images/WBW.png";
 import Startalk from "./Images/Startalk.jpg";
 import TimFerris from "./Images/TimFerris.jpg";
@@ -36,12 +37,15 @@ const AboutMe = ({onRouteChange}) => {
                     <h3>Where I web-surf</h3>
                     <h4 className="pa2">Favourite blogs:</h4>
                     <ul>
-                        <img id="MMM" src={MMM} alt="" width="auto" height="90px" className="pa2 mr3 pointer" 
-                            onClick={()=> window.open("https://www.mrmoneymustache.com/2011/10/22/what-is-hedonic-adaptation-and-how-can-it-turn-you-into-a-sukka/", "_blank")}
-                        />
                         <img id="WBW" src={WBW} alt="" width="auto" height="90px" className="pa2 pointer"
                             onClick={()=> window.open("https://waitbutwhy.com/2015/01/artificial-intelligence-revolution-1.html", "_blank")}
                         />  
+                        <img id="MMM" src={MMM} alt="" width="auto" height="90px" className="pa2 mr3 pointer" 
+                            onClick={()=> window.open("https://www.mrmoneymustache.com/2011/10/22/what-is-hedonic-adaptation-and-how-can-it-turn-you-into-a-sukka/", "_blank")}
+                        />
+                        <img id="ORG" src={ORG} alt="" width="auto" height="90px" className="pa2 mr3 pointer" 
+                            onClick={()=> window.open("https://programs.clearerthinking.org/common_misconceptions.html#.YO5FcugzaUk", "_blank")}
+                        />
                     </ul>
                     <h4 className="pa2">Favourite podcasts:</h4>
                     <ul>
@@ -49,7 +53,7 @@ const AboutMe = ({onRouteChange}) => {
                             onClick={()=> window.open("https://www.youtube.com/watch?v=UvmWxm3nR6E", "_blank")}
                         />
                         <img id="TimFerris" src={TimFerris} alt="" width="auto" height="90px" className="pa2 pointer"
-                            onClick={()=> window.open("https://tim.blog/2020/02/13/ryan-holiday-interviews-tim-ferriss/", "_blank")}
+                            onClick={()=> window.open("https://tim.blog/top-10-podcasts/", "_blank")}
                         />
                         <img id="ChooseFi" src={ChooseFi} alt="" width="auto" height="90px" className="pa2 pointer"
                             onClick={()=> window.open("https://www.choosefi.com/100-welcome-to-the-fi-community/", "_blank")}

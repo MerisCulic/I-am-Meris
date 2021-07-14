@@ -1,8 +1,9 @@
 import React from 'react';
 import NASApatch from "./Images/APOD-patch.png";
-import WebDevLogo from "./Images/WebDevLogo.png"
-import GraphicDesignLogo from "./Images/GraphicDesignLogo.png"
-import PhotographyLogo from "./Images/PhotographyLogo.png"
+import WebDevLogo from "./Images/WebDevLogo.png";
+import GraphicDesignLogo from "./Images/GraphicDesignLogo.png";
+import PhotographyLogo from "./Images/PhotographyLogo.png";
+import HomeArrow from "./Images/home.png"
 import "./Homepage.css";
 
 const Homepage = ({onRouteChange}) => {
@@ -24,6 +25,7 @@ const Homepage = ({onRouteChange}) => {
                     </div>
                 </div>
             </div>
+            <img id="homeArrow" className="" src={HomeArrow} alt="" />
             <img id="NASApatch" className="pointer pa4 " src={NASApatch} alt="" onClick={() => onRouteChange("NASA")} />
         </div>
     )

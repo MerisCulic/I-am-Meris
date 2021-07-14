@@ -20,6 +20,16 @@ body {
     max-height:254px
 }
 
+#homeArrow {
+    position: fixed;
+    top: 150px;
+    left: 40px;
+    float: left;
+    transform: rotate(-10deg);
+    width: 150px;
+    height: auto;
+}
+
 @media (max-width: 580px) {
     #NASApatch {
         max-height: 200px;
