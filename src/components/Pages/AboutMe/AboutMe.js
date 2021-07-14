@@ -17,8 +17,8 @@ const AboutMe = ({onRouteChange}) => {
                 <h1 className="dib pa2 v-top">Hello!</h1>
                 <div className="bg-washed-green pa2 br4">
                     <h2 className="fl w-100">My name is Meris</h2>
-                    <p>..and I love expressing my creative side which usually ends up as a photo in a photo album or as a web store's product image, 
-                        as an event poster on a busy street, sometimes as a company logo on a bussiness card or as a memory-trigger of someone's 
+                    <p>..and I enjoy expressing my creative side which usually ends up as a photo in a photo album or as an event poster on a busy street, 
+                        sometimes even as a company logo on a bussiness card or as a memory-trigger of someone's 
                         first car on their new coffee mug. With a spark of curiosity and a wish to expand my usefullness I delved into the world
                         of web deveopment and found that creating web applications is a fun experience. Through countless online resources and 
                         a coding bootcamp called Smart Ninja I learned HTML5, CSS3, Python, flask, JavaScript, React, mySQL, git, Heroku and GitHub.</p>
@@ -27,12 +27,10 @@ const AboutMe = ({onRouteChange}) => {
                         places in our own, finding out what makes someone tick, and learning new things that I find interesting. 
                     </p>
                     <p>
-                        Some of these free time activities were put in a written form: 
+                        Sometimes some of these free time activities end up in a written form: 
                     </p>
                     <ul>
                         <li className="pointer dim" onClick={() => onRouteChange("theIndirectRoute")}>Taking the indirect route</li>
-                        <li className="pointer dim" onClick={() => onRouteChange("theUnpeacefullAtom")}>(Un)peacefol atom</li>
-                        <li>Legende Kragujevca [SLO]</li>
                     </ul>
                     <h3>Where I web-surf</h3>
                     <h4 className="pa2">Favourite blogs:</h4>

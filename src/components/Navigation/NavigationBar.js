@@ -11,7 +11,6 @@ const NavigationBar = ({onRouteChange}) => {
                 <img id="navbarLogo" onClick={() => onRouteChange("home")} className="pointer" src={logo} alt=""/>
                 <div className="links">
                     <p id="aboutme" onClick={() => onRouteChange("aboutme")} className="f4 link dim pa2 pr3 pointer">About me</p>
-                    <p id="contact" onClick={() => onRouteChange("contact")} className="f4 link dim pa2 pr3 pointer">Contact</p>
                 </div>
             </div>
         </div>
