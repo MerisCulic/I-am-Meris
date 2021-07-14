@@ -7,7 +7,7 @@ import Startalk from "./Images/Startalk.jpg";
 import TimFerris from "./Images/TimFerris.jpg";
 import ChooseFi from "./Images/ChooseFi.png";
 
-const AboutMe = () => {
+const AboutMe = ({onRouteChange}) => {
     return (
         <>
         <div className="AboutMe">
@@ -29,8 +29,8 @@ const AboutMe = () => {
                         Some of these free time activities were put in a written form: 
                     </p>
                     <ul>
-                        <li>Taking the indirect route</li>
-                        <li>(Un)peacefol atom</li>
+                        <li className="pointer dim" onClick={() => onRouteChange("theIndirectRoute")}>Taking the indirect route</li>
+                        <li className="pointer dim" onClick={() => onRouteChange("theUnpeacefullAtom")}>(Un)peacefol atom</li>
                         <li>Legende Kragujevca [SLO]</li>
                     </ul>
                     <h3>Where I web-surf</h3>

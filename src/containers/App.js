@@ -7,6 +7,8 @@ import Contact from '../components/Pages/Contact/Contact';
 import WebDevelopment from '../components/Pages/WebDevelopment/WebDevelopment';
 import GraphicDesign from '../components/Pages/GraphicDesign/GraphicDesign';
 import Photography from '../components/Pages/Photography/Photography';
+import TheIndirectRoute from '../components/Pages/Trips/TheIndirectRoute/TheIndirectRoute';
+
 import './App.css';
 
 
@@ -40,7 +42,7 @@ class App extends Component {
     } else if (route === 'NASA'){
         page = <NASA />;
     } else if (route === 'aboutme'){
-        page = <AboutMe />;
+        page = <AboutMe onRouteChange={this.onRouteChange}/>;
     } else if (route === 'contact'){
         page = <Contact />;
     } else if (route === 'webdev'){
@@ -49,6 +51,8 @@ class App extends Component {
         page = <GraphicDesign />;
     } else if (route === 'photography'){
         page = <Photography gallery={gallery} onGalleryChange={this.onGalleryChange}/>;
+    } else if (route === 'theIndirectRoute'){
+        page = <TheIndirectRoute />;
     }
 
     return (
