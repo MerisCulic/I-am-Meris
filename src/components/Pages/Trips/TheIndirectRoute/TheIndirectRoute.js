@@ -131,10 +131,10 @@ const TheIndirectRoute = () => {
                         Jovanka and for 350 others from Yugoslavia's supreme command thus enabling their
                         management over the armed forces up to six months of isolation in case of a nuclear attack.
                     </p>
-                    <div className="bunker flex justify-around w-100">
-                        <img id="" src={Bunker1} alt="" className="pa2 br4 w-33"/>
-                        <img id="" src={Bunker2} alt="" className="pa2 br4 w-33"/>
-                        <img id="" src={Bunker3} alt="" className="pa2 br4 w-33"/>
+                    <div className="bunker flex justify-around center w-100">
+                        <img id="" src={Bunker1} alt="" className="pa2 br4 mw3-ns"/>
+                        <img id="" src={Bunker2} alt="" className="pa2 br4 mw5-ns"/>
+                        <img id="" src={Bunker3} alt="" className="pa2 br4 mw5-ns"/>
                     </div>
                     <img id="" src={E73} alt="" className="fr pa2 br4 w-50"/>
                     <p>

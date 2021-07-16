@@ -31,6 +31,7 @@ const AboutMe = ({onRouteChange}) => {
                     </p>
                     <ul>
                         <li className="pointer dim" onClick={() => onRouteChange("theIndirectRoute")}>Taking the indirect route</li>
+                        <li className="pointer dim" onClick={() => onRouteChange("chernobylTrip")}>The (un)peacefull atom</li>
                     </ul>
                     <h3>Where I web-surf</h3>
                     <h4 className="pa2">Favourite blogs:</h4>

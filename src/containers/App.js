@@ -8,6 +8,7 @@ import WebDevelopment from '../components/Pages/WebDevelopment/WebDevelopment';
 import GraphicDesign from '../components/Pages/GraphicDesign/GraphicDesign';
 import Photography from '../components/Pages/Photography/Photography';
 import TheIndirectRoute from '../components/Pages/Trips/TheIndirectRoute/TheIndirectRoute';
+import ChernobylTrip from '../components/Pages/Trips/ChernobylTrip/ChernobylTrip';
 
 import './App.css';
 
@@ -53,7 +54,9 @@ class App extends Component {
         page = <Photography gallery={gallery} onGalleryChange={this.onGalleryChange}/>;
     } else if (route === 'theIndirectRoute'){
         page = <TheIndirectRoute />;
-    }
+    } else if (route === 'chernobylTrip'){
+      page = <ChernobylTrip />;
+  }
 
     return (
       <div className="App">

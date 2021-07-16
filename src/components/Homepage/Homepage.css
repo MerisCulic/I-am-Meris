@@ -32,12 +32,13 @@ body {
 
 #underConstruction {
     position: fixed;
-    bottom: 30px;
-    left: 40px;
+    bottom: 10px;
+    left: 10px;
     float: left;
     transform: rotate(-10deg);
-    max-width: 400px;
+    max-width: 150px;
     height: auto;
+    display: none;
 }
 
 @media (max-width: 580px) {
@@ -52,5 +53,13 @@ body {
     .projectsNavigation img {
         width: 90px;
         height: auto;
+    }
+
+    #underConstruction {
+        display: block;
+    }
+
+    #homeArrow {
+        width: 100px;
     }
 }  

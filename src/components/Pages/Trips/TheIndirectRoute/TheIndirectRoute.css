@@ -7,4 +7,10 @@
     .bunker {
         display: block;
     }
+
+    .bunker img {
+        width: 150px;
+        height: auto;
+    }
+    
 }  
