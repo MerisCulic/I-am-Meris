@@ -13,10 +13,6 @@
 }
 
 @media (max-width: 580px) {
-    .WebDevelopment {
-        padding-top: 150px;
-    }
-
     .applist {
         text-align: center;
     }

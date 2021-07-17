@@ -3,11 +3,25 @@ body {
     background-color: #222222;
 }
 
-.nasa-photo img {
-    width: 100%;
-    object-fit: contain;
+.nasa-photo {
+    display: flex;
 }
 
+.nasa-photo img {
+    object-fit: contain;
+    max-height: 65vh;
+    height: auto;
+}
 
+@media (max-width: 780px) {
+    .nasa-photo {
+        display: block;
+    }
 
+    .nasa-photo img {
+        object-fit: contain;
+        max-width: 100%;
+        height: auto;
+    }
 
+}

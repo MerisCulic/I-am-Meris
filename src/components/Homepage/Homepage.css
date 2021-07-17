@@ -4,10 +4,16 @@ body {
 }
 
 .projectsNavigation {
+    width: fit-content;
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.projectsNavigation img {
+    max-width: 250px;
+    height: auto;
 }
 
 #NASApatch {
@@ -30,15 +36,11 @@ body {
     height: auto;
 }
 
-#underConstruction {
-    position: fixed;
-    bottom: 10px;
-    left: 10px;
-    float: left;
-    transform: rotate(-10deg);
-    max-width: 150px;
-    height: auto;
-    display: none;
+@media (max-width: 780px) {
+    .projectsNavigation img {
+        width: 30vw;
+        height: auto;
+    }
 }
 
 @media (max-width: 580px) {
@@ -50,16 +52,16 @@ body {
         padding: 0;
     }
 
-    .projectsNavigation img {
-        width: 90px;
-        height: auto;
-    }
-
     #underConstruction {
         display: block;
     }
 
     #homeArrow {
         width: 100px;
+        left: 20vw;
+    }
+
+    .child {
+        display: none;
     }
 }  

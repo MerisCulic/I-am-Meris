@@ -37,7 +37,7 @@ class App extends Component {
 
     let page;
     if (route === 'home') {
-        page = <Homepage onRouteChange={this.onRouteChange}/>;
+        page = "";
     } else if (route === 'apod'){
         page = <NASA />;
     } else if (route === 'aboutme'){
