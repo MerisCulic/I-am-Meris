@@ -7,6 +7,7 @@ import WBW from "./Images/WBW.png";
 import Startalk from "./Images/Startalk.jpg";
 import TimFerris from "./Images/TimFerris.jpg";
 import ChooseFi from "./Images/ChooseFi.png";
+import Contact from '../../Contact/Contact';
 
 const AboutMe = ({onRouteChange}) => {
     return (
@@ -30,10 +31,10 @@ const AboutMe = ({onRouteChange}) => {
                         Sometimes some of these free time activities end up in a written form: 
                     </p>
                     <ul>
-                        <li className="pointer dim" onClick={() => onRouteChange("theIndirectRoute")}>Taking the indirect route</li>
-                        <li className="pointer dim" onClick={() => onRouteChange("chernobylTrip")}>The (un)peacefull atom</li>
+                        <li className="pointer dim" onClick={() => onRouteChange("theIndirectRoute")}><i>Taking the indirect route</i></li>
+                        <li className="pointer dim" onClick={() => onRouteChange("chernobylTrip")}><i>The (un)peacefull atom</i></li>
                     </ul>
-                    <h3>Where I web-surf</h3>
+                    <h3>Where I web surf</h3>
                     <h4 className="pa2">Favourite blogs:</h4>
                     <ul>
                         <img id="WBW" src={WBW} alt="" width="auto" height="90px" className="pa2 pointer"
@@ -58,6 +59,7 @@ const AboutMe = ({onRouteChange}) => {
                             onClick={()=> window.open("https://www.choosefi.com/100-welcome-to-the-fi-community/", "_blank")}
                         />
                     </ul>
+                    <Contact />
                 </div>
                 <h4 className="tc"><i>This website was made with love and powered by coffee</i></h4>
             </div>

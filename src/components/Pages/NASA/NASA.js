@@ -23,12 +23,11 @@ export default function NASA() {
   
     return (
         <>
-        <div className="NASA">
-            <div className="tc gallery bg-light-green pa2 br4 fl w-100 shadow-3">
-                <h1 className="dib pa2">Astronomy Picture Of The Day</h1>
-                <img id="NASAIcon" src={NASAicon} alt="" width="90px" height="90px"/>
+        <div className="center">
+            <div className="gallery bg-light-green pa2 br4 fl w-100 shadow-3">
+                <h1 className="f3 f2-m f1-l pa2">Astronomy Picture Of The Day</h1>
                 <div className="bg-washed-green pa2 br4">
-                    <h2 className="fl w-100">{photoData.title}</h2>
+                    <h2 className="f5 f4-m f3-l fl w-100">{photoData.title}</h2>
                     <p className="date">{photoData.date}</p>
                     <div className="nasa-photo">
                         {photoData.media_type === "image" ? (
@@ -50,7 +49,12 @@ export default function NASA() {
                         )}
                         <p className="explanation pa3">{photoData.explanation}</p>
                     </div>
+                    
                 </div>
+                <p className="tc">
+                    <i>Provided to us daily by NASA</i>
+                    <img id="NASAIcon" src={NASAicon} className="pl2" alt="" width="auto" height="30px"/>
+                </p>
             </div>
         </div>
         </>

@@ -195,17 +195,14 @@ const TheIndirectRoute = () => {
                         high up the hills where you can admire the views of seemingly endless islands and
                         somewhere it takes you down to almost
                         sea level where you can witness the battle
-                        between the waves and the coastal rocks.
-                    </p>
-                    <img id="" src={Makarska} alt="" className="fl pa2 br4 w-30"/>
-                    <p>
-                        It goes through calm, picturesque fishing
+                        between the waves and the coastal rocks. It goes through calm, picturesque fishing
                         villages as well as through bustling major
                         seaside cities. It's a true delight, made
                         even sweeter if you happen to stumble
                         upon a beautiful empty beach where a
                         chance to cool off and rest a bit occurs.
                     </p>
+                    <img id="" src={Makarska} alt="" className="fl pa2 br4 w-30"/>
                     <p>
                         We were passing one island after another. Slowly, my left arm was getting browner that my
                         right one which was hiding in the shade and mingling with the gear shifter. Eventually we

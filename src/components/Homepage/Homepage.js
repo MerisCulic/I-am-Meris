@@ -28,7 +28,7 @@ const Homepage = ({onRouteChange}) => {
             </div>
             <img id="homeArrow" className="" src={HomeArrow} alt="" />
             <img id="underConstruction" className="" src={underConstruction} alt="" />
-            <img id="NASApatch" className="pointer pa4 " src={NASApatch} alt="" onClick={() => onRouteChange("NASA")} />
+            <img id="NASApatch" className="pointer pa4 " src={NASApatch} alt="" onClick={() => onRouteChange("apod")} />
         </div>
     )
 }

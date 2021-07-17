@@ -3,13 +3,11 @@ import NavigationBar from '../components/Navigation/NavigationBar';
 import Homepage from '../components/Homepage/Homepage';
 import NASA from '../components/Pages/NASA/NASA';
 import AboutMe from '../components/Pages/AboutMe/AboutMe';
-import Contact from '../components/Pages/Contact/Contact';
 import WebDevelopment from '../components/Pages/WebDevelopment/WebDevelopment';
 import GraphicDesign from '../components/Pages/GraphicDesign/GraphicDesign';
 import Photography from '../components/Pages/Photography/Photography';
 import TheIndirectRoute from '../components/Pages/Trips/TheIndirectRoute/TheIndirectRoute';
 import ChernobylTrip from '../components/Pages/Trips/ChernobylTrip/ChernobylTrip';
-
 import './App.css';
 
 
@@ -40,12 +38,10 @@ class App extends Component {
     let page;
     if (route === 'home') {
         page = <Homepage onRouteChange={this.onRouteChange}/>;
-    } else if (route === 'NASA'){
+    } else if (route === 'apod'){
         page = <NASA />;
     } else if (route === 'aboutme'){
         page = <AboutMe onRouteChange={this.onRouteChange}/>;
-    } else if (route === 'contact'){
-        page = <Contact />;
     } else if (route === 'webdev'){
         page = <WebDevelopment />;
     } else if (route === 'graphicdesign'){
