@@ -9,6 +9,7 @@ import TimFerris from "./Images/TimFerris.jpg";
 import ChooseFi from "./Images/ChooseFi.png";
 import Contact from '../../Contact/Contact';
 
+
 const AboutMe = ({onRouteChange}) => {
     return (
         <>
@@ -39,13 +40,13 @@ const AboutMe = ({onRouteChange}) => {
                         <div>
                             <h4>Favourite blogs:</h4>
                             <ul className="flex">
-                                <img id="WBW" src={WBW} alt="" width="auto" height="90px" className="pa2 pointer"
+                                <img id="WBW" src={WBW} alt="" width="auto" height="90px" className="pa2 pointer grow"
                                     onClick={()=> window.open("https://waitbutwhy.com/2015/01/artificial-intelligence-revolution-1.html", "_blank")}
                                 />  
-                                <img id="MMM" src={MMM} alt="" width="auto" height="90px" className="pa2 mr3 pointer" 
+                                <img id="MMM" src={MMM} alt="" width="auto" height="90px" className="pa2 mr3 pointer grow" 
                                     onClick={()=> window.open("https://www.mrmoneymustache.com/2011/10/22/what-is-hedonic-adaptation-and-how-can-it-turn-you-into-a-sukka/", "_blank")}
                                 />
-                                <img id="ORG" src={ORG} alt="" width="auto" height="90px" className="pa2 mr3 pointer" 
+                                <img id="ORG" src={ORG} alt="" width="auto" height="90px" className="pa2 mr3 pointer grow" 
                                     onClick={()=> window.open("https://programs.clearerthinking.org/common_misconceptions.html#.YO5FcugzaUk", "_blank")}
                                 />
                             </ul>
@@ -53,13 +54,13 @@ const AboutMe = ({onRouteChange}) => {
                         <div>
                             <h4>Favourite podcasts:</h4>
                             <ul className="flex">
-                                <img id="Startalk" src={Startalk} alt="" width="auto" height="90px" className="pa2 pointer"
+                                <img id="Startalk" src={Startalk} alt="" width="auto" height="90px" className="pa2 pointer grow"
                                     onClick={()=> window.open("https://www.youtube.com/watch?v=UvmWxm3nR6E", "_blank")}
                                 />
-                                <img id="TimFerris" src={TimFerris} alt="" width="auto" height="90px" className="pa2 pointer"
+                                <img id="TimFerris" src={TimFerris} alt="" width="auto" height="90px" className="pa2 pointer grow"
                                     onClick={()=> window.open("https://tim.blog/top-10-podcasts/", "_blank")}
                                 />
-                                <img id="ChooseFi" src={ChooseFi} alt="" width="auto" height="90px" className="pa2 pointer"
+                                <img id="ChooseFi" src={ChooseFi} alt="" width="auto" height="90px" className="pa2 pointer grow"
                                     onClick={()=> window.open("https://www.choosefi.com/100-welcome-to-the-fi-community/", "_blank")}
                                 />
                             </ul>
@@ -67,7 +68,7 @@ const AboutMe = ({onRouteChange}) => {
                     </div>                   
                     <Contact />
                 </div>
-                <h4 className="tc"><i>This website was made with love and powered by coffee</i></h4>
+                <h4 className="tc"><i>This website was made with love and powered coffee.</i></h4>
             </div>
         </div>
         </>

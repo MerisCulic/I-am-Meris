@@ -1,9 +1,11 @@
 .web-surf {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .web-surf ul {
     display: flex;
+    flex-wrap: wrap;
 }
 
 @media (max-width: 780px) {

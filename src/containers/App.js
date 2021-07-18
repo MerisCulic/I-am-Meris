@@ -8,6 +8,7 @@ import GraphicDesign from '../components/Pages/GraphicDesign/GraphicDesign';
 import Photography from '../components/Pages/Photography/Photography';
 import TheIndirectRoute from '../components/Pages/Trips/TheIndirectRoute/TheIndirectRoute';
 import ChernobylTrip from '../components/Pages/Trips/ChernobylTrip/ChernobylTrip';
+import ErrorBoundary from '../components/ErrorBoundary/ErrorBoundary';
 import './App.css';
 
 
@@ -56,11 +57,13 @@ class App extends Component {
 
     return (
       <div className="App">
-        <NavigationBar onRouteChange={this.onRouteChange} />
-        <Homepage onRouteChange={this.onRouteChange} />
-        <div className="Page">
-            {page}
-        </div>
+        <ErrorBoundary>
+          <NavigationBar onRouteChange={this.onRouteChange} />
+          <Homepage onRouteChange={this.onRouteChange} />
+          <div className="Page">
+              {page}
+          </div>
+        </ErrorBoundary>
       </div>
     );
   }
