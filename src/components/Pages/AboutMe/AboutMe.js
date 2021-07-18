@@ -34,31 +34,37 @@ const AboutMe = ({onRouteChange}) => {
                         <li className="pointer dim" onClick={() => onRouteChange("theIndirectRoute")}><i>Taking the indirect route</i></li>
                         <li className="pointer dim" onClick={() => onRouteChange("chernobylTrip")}><i>The (un)peacefull atom</i></li>
                     </ul>
-                    <h3>Where I web surf</h3>
-                    <h4 className="pa2">Favourite blogs:</h4>
-                    <ul>
-                        <img id="WBW" src={WBW} alt="" width="auto" height="90px" className="pa2 pointer"
-                            onClick={()=> window.open("https://waitbutwhy.com/2015/01/artificial-intelligence-revolution-1.html", "_blank")}
-                        />  
-                        <img id="MMM" src={MMM} alt="" width="auto" height="90px" className="pa2 mr3 pointer" 
-                            onClick={()=> window.open("https://www.mrmoneymustache.com/2011/10/22/what-is-hedonic-adaptation-and-how-can-it-turn-you-into-a-sukka/", "_blank")}
-                        />
-                        <img id="ORG" src={ORG} alt="" width="auto" height="90px" className="pa2 mr3 pointer" 
-                            onClick={()=> window.open("https://programs.clearerthinking.org/common_misconceptions.html#.YO5FcugzaUk", "_blank")}
-                        />
-                    </ul>
-                    <h4 className="pa2">Favourite podcasts:</h4>
-                    <ul>
-                        <img id="Startalk" src={Startalk} alt="" width="auto" height="90px" className="pa2 pointer"
-                            onClick={()=> window.open("https://www.youtube.com/watch?v=UvmWxm3nR6E", "_blank")}
-                        />
-                        <img id="TimFerris" src={TimFerris} alt="" width="auto" height="90px" className="pa2 pointer"
-                            onClick={()=> window.open("https://tim.blog/top-10-podcasts/", "_blank")}
-                        />
-                        <img id="ChooseFi" src={ChooseFi} alt="" width="auto" height="90px" className="pa2 pointer"
-                            onClick={()=> window.open("https://www.choosefi.com/100-welcome-to-the-fi-community/", "_blank")}
-                        />
-                    </ul>
+                    <h3 className="pv2">Where I web surf</h3>
+                    <div className="web-surf">
+                        <div>
+                            <h4>Favourite blogs:</h4>
+                            <ul className="flex">
+                                <img id="WBW" src={WBW} alt="" width="auto" height="90px" className="pa2 pointer"
+                                    onClick={()=> window.open("https://waitbutwhy.com/2015/01/artificial-intelligence-revolution-1.html", "_blank")}
+                                />  
+                                <img id="MMM" src={MMM} alt="" width="auto" height="90px" className="pa2 mr3 pointer" 
+                                    onClick={()=> window.open("https://www.mrmoneymustache.com/2011/10/22/what-is-hedonic-adaptation-and-how-can-it-turn-you-into-a-sukka/", "_blank")}
+                                />
+                                <img id="ORG" src={ORG} alt="" width="auto" height="90px" className="pa2 mr3 pointer" 
+                                    onClick={()=> window.open("https://programs.clearerthinking.org/common_misconceptions.html#.YO5FcugzaUk", "_blank")}
+                                />
+                            </ul>
+                        </div>
+                        <div>
+                            <h4>Favourite podcasts:</h4>
+                            <ul className="flex">
+                                <img id="Startalk" src={Startalk} alt="" width="auto" height="90px" className="pa2 pointer"
+                                    onClick={()=> window.open("https://www.youtube.com/watch?v=UvmWxm3nR6E", "_blank")}
+                                />
+                                <img id="TimFerris" src={TimFerris} alt="" width="auto" height="90px" className="pa2 pointer"
+                                    onClick={()=> window.open("https://tim.blog/top-10-podcasts/", "_blank")}
+                                />
+                                <img id="ChooseFi" src={ChooseFi} alt="" width="auto" height="90px" className="pa2 pointer"
+                                    onClick={()=> window.open("https://www.choosefi.com/100-welcome-to-the-fi-community/", "_blank")}
+                                />
+                            </ul>
+                        </div>  
+                    </div>                   
                     <Contact />
                 </div>
                 <h4 className="tc"><i>This website was made with love and powered by coffee</i></h4>

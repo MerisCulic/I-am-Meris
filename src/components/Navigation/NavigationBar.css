@@ -11,6 +11,13 @@
     transition: transform .4s ease-in-out;
 }
 
+#AboutLogo {
+    max-width: 150px;
+    height: 45px;
+    transform: rotate(8deg);
+    z-index: 1;
+}
+
 #navbarLogo {
     max-width: 120px;
     height: auto;

@@ -1,4 +1,5 @@
 import React from 'react';
+import ImageGallery from 'react-image-gallery';
 import './TheIndirectRoute.css';
 import Zeljava1 from './Images/Zeljava1.jpg';
 import Zeljava2 from './Images/Zeljava2.jpg';
@@ -12,6 +13,15 @@ import Jablanica from './Images/Jablanica.jpg';
 import Sutjeska from './Images/Sutjeska.jpg';
 import Makarska from './Images/Makarska.jpg';
 import BeachBarMini from './Images/BeachBarMini.jpg';
+
+const gallery1 = [
+    {
+        original: Bunker1,    },
+    {
+        original: Bunker2,    },
+    {
+        original: Bunker3,    }
+];
 
 
 const TheIndirectRoute = () => {
@@ -40,7 +50,7 @@ const TheIndirectRoute = () => {
                         heading to the capital. It takes little over an hour to get from Jesenice to Ljubljana without a
                         highway vignette. It is a road that was a great warm up for the roads to come.
                     </p>
-                    <img id="" src={Zeljava2} alt="" className="fl pa2 br4 w-30"/>
+                    <img id="" src={Zeljava2} alt="" className="fl pa2 br4 w-40"/>
                     <p>
                         In Ljubljana I met up with my friend whose Austin Mini clubman estate was proudly showing its fresh black paint
                         and was eagerly awaiting for us to embark on our journey. But where were we heading anyway? Our destination for
@@ -82,7 +92,7 @@ const TheIndirectRoute = () => {
                         kinks got ironed out quite nicely. Slower traffic was no longer a problem and was easily left in
                         our dust as the oncoming vehicles could be spotted miles in advance.
                     </p>
-                    <img id="" src={Jajce} alt="" className="fl pa2 br4 w-30"/>
+                    <img id="" src={Jajce} alt="" className="fl pa2 br4 w-40"/>
                     <p>
                         Jajce is a city that has always been situated on important intersections on which trading routes,
                         nationalities, cultures and even rivers meet. It's a city that is attracting visitors with its 
@@ -130,13 +140,11 @@ const TheIndirectRoute = () => {
                         during the Cold War period and was intended as a sanctuary for Marshal Tito, his wife
                         Jovanka and for 350 others from Yugoslavia's supreme command thus enabling their
                         management over the armed forces up to six months of isolation in case of a nuclear attack.
-                    </p>
-                    <div className="bunker flex justify-around center w-100">
-                        <img id="" src={Bunker1} alt="" className="pa2 br4 mw3-ns"/>
-                        <img id="" src={Bunker2} alt="" className="pa2 br4 mw5-ns"/>
-                        <img id="" src={Bunker3} alt="" className="pa2 br4 mw5-ns"/>
+                    </p>                               
+                    <div className="bg-washed-green center mw5 mw8-ns">
+                        <ImageGallery items={gallery1} showThumbnails={false} showBullets={true}/>
                     </div>
-                    <img id="" src={E73} alt="" className="fr pa2 br4 w-50"/>
+                    <img id="" src={E73} alt="" className="fr pa2 br4 w-95"/>
                     <p>
                         As we were driving further towards the south on the E73 we were going further back into
                         Yugoslavia's history. The town of Jablanica got us to the year 1943. This is when World War

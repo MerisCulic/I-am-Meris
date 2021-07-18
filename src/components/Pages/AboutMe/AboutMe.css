@@ -1,0 +1,17 @@
+.web-surf {
+    display: flex;
+}
+
+.web-surf ul {
+    display: flex;
+}
+
+@media (max-width: 780px) {
+    .web-surf {
+        display: block;
+    }
+
+    .web-surf ul {
+        display: block;
+    }
+}
