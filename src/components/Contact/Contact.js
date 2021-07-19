@@ -9,16 +9,21 @@ import './Contact.css';
 
 const Contact = () => {
     function copyFunc() {
-        navigator.clipboard.writeText('meris.culic@gmail.com');
         let tooltip = document.getElementById("myTooltip");
-        tooltip.innerHTML = "E-mail address copied to clipboard!";
+        try {
+            navigator.clipboard.writeText('meris.culic@gmail.com');
+            tooltip.innerHTML = "E-mail address copied to clipboard!";
+        }
+        catch(err) {
+            tooltip.innerHTML = "meris.culic@gmail.com";
+            tooltip.style.width = "fit-content"
+        }
     }
 
     function outFunc() {
         let tooltip = document.getElementById("myTooltip");
         tooltip.innerHTML = "Copy to clipboard";
     }
-      
 
     return (
         <>

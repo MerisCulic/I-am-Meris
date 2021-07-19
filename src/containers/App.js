@@ -34,7 +34,6 @@ class App extends Component {
 
   render() {
     const {route, gallery} = this.state;
-    console.log('render', route, gallery);
 
     let page;
     if (route === 'home') {
