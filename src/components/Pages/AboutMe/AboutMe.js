@@ -68,7 +68,7 @@ const AboutMe = ({onRouteChange}) => {
                     </div>                   
                     <Contact />
                 </div>
-                <h4 className="tc"><i>This website was made with love and powered coffee.</i></h4>
+                <h4 className="tc"><i>This website was made with love and powered by coffee.</i></h4>
             </div>
         </div>
         </>

@@ -1,21 +1,14 @@
 .navbar {
     position: fixed;
+    top: 0;
     font-family: 'Orbitron', sans-serif;
-    color: floralwhite;
-    width: 100%;
+    width: auto;
     height: 90px;
     z-index: 3;
 }
 
 .navbar img {
     transition: transform .4s ease-in-out;
-}
-
-#AboutLogo {
-    max-width: 150px;
-    height: 45px;
-    transform: rotate(8deg);
-    z-index: 1;
 }
 
 #navbarLogo {
@@ -27,18 +20,14 @@
     transition: transform 2s ease-in-out;
 }
 
-.topbar {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.links {
-    display: flex;
-}
-
 @media(max-width: 580px) {
     #navbarLogo {
         width: 30vw;
+    }
+}
+
+@media(max-height: 560px) {
+    #navbarLogo {
+        width: 90px;
     }
 }

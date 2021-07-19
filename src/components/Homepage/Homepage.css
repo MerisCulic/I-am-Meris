@@ -20,7 +20,6 @@ body {
     position: fixed;
     bottom: 2vh;
     right: 2vw;
-    float: right;
     height: 25vh;
     min-height: 127px; 
     max-height:254px
@@ -30,16 +29,62 @@ body {
     position: fixed;
     top: 150px;
     left: 40px;
-    float: left;
-    transform: rotate(-10deg);
+    transform: rotate(-8deg);
     width: 150px;
     height: auto;
+}
+
+#AboutLogo {
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    max-width: 150px;
+    height: 45px;
+    transform: rotate(8deg);
+    z-index: 1;
 }
 
 @media (max-width: 780px) {
     .projectsNavigation img {
         width: 30vw;
         height: auto;
+    }
+}
+
+@media (max-height: 560px) {
+    .projectsNavigation img {
+        width: auto;
+        height: 30vh;
+    }
+
+    .projectsNavigation {
+        top: 60%
+    }
+
+    #homeArrow {
+        position: fixed;
+        top: 30px;
+        left: 100px;
+        transform: rotate(-57deg);
+        width: 100px;
+        height: auto;
+    }
+
+    #NASApatch {
+        bottom: 0;
+        right: 0;
+        padding: 5px;
+        min-height: 127px; 
+        max-height:254px
+    }
+
+    #AboutLogo {
+        top: 30px;
+        right: 30px;
+        max-width: 120px;
+        height: 35px;
+        transform: rotate(8deg);
+        z-index: 1;
     }
 }
 
@@ -50,10 +95,6 @@ body {
         bottom: 10px;
         right: 10px;
         padding: 0;
-    }
-
-    #underConstruction {
-        display: block;
     }
 
     #homeArrow {

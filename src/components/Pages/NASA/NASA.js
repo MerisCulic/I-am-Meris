@@ -52,7 +52,7 @@ export default function NASA() {
                     
                 </div>
                 <p className="tc">
-                    <i>Provided to us daily by NASA</i>
+                    <i>Provided by NASA</i>
                     <img id="NASAIcon" src={NASAicon} className="pl2" alt="" width="auto" height="30px"/>
                 </p>
             </div>
