@@ -294,7 +294,7 @@ const ChernobylTrip = () => {
                 <h1 className="dib pa2 v-top">The (un)peacefull atom</h1>
                 <h3 className="pl3">A road trip into the Chernobyl exclusion zone</h3>
                 <div className="bg-washed-green pa2 br4">
-                    <img id="" src={ZKS} alt="" className="fl pa2 br4 mw4 mw6-ns"/>
+                    <img id="" src={ZKS} alt="" className="fl-ns center pa2 br4 w-90 mw5-ns"/>
                     <p>
                         Imagine, you go through life as most people do – you wake up in the morning and go to work, 
                         return home 8 or 12 hours later, do your chores and then spend the rest of the day with your 

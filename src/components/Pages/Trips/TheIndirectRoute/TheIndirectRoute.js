@@ -13,6 +13,7 @@ import Jablanica from './Images/Jablanica.jpg';
 import Sutjeska from './Images/Sutjeska.jpg';
 import Makarska from './Images/Makarska.jpg';
 import BeachBarMini from './Images/BeachBarMini.jpg';
+import './TheIndirectRoute.css';
 
 const gallery1 = [
     {
@@ -28,7 +29,7 @@ const TheIndirectRoute = () => {
     return (
         <>
         <div className="TheIndirectRoute">
-            <div className="gallery bg-light-green pa2 br4 fl w-100 shadow-3">
+            <div className="gallery bg-light-green pa2 br4 w-100 shadow-3">
                 <h1 className="dib pa2 v-top">Taking the indirect route</h1>
                 <div className="bg-washed-green pa2 br4">
                     <p>It's not just about getting to your destination, it's about experiencing all in the between.
@@ -50,7 +51,7 @@ const TheIndirectRoute = () => {
                         heading to the capital. It takes little over an hour to get from Jesenice to Ljubljana without a
                         highway vignette. It is a road that was a great warm up for the roads to come.
                     </p>
-                    <img id="" src={Zeljava2} alt="" className="fl pa2 br4 w-40"/>
+                    <img id="" src={Zeljava2} alt="" className="fl-ns center pa2-ns br4 w-auto w-40-ns"/>
                     <p>
                         In Ljubljana I met up with my friend whose Austin Mini clubman estate was proudly showing its fresh black paint
                         and was eagerly awaiting for us to embark on our journey. But where were we heading anyway? Our destination for
@@ -81,7 +82,7 @@ const TheIndirectRoute = () => {
                         more than 50 tonnes of explosives used. The passing time didn't help it either but the area is
                         still very interesting to explore.
                     </p>
-                    <img id="" src={Zeljava1} alt="" className="fr pa2 br4 w-40"/>
+                    <img id="" src={Zeljava1} alt="" className="fr-ns center pa2-ns br4 w-auto w-40-ns"/>
                     <p>
                         Once back outside, a longer look at the runway might persuade you for a high speed run.
                         Keep in mind though, it is located on the border itself. Crossing it at high speed might grab
@@ -92,7 +93,7 @@ const TheIndirectRoute = () => {
                         kinks got ironed out quite nicely. Slower traffic was no longer a problem and was easily left in
                         our dust as the oncoming vehicles could be spotted miles in advance.
                     </p>
-                    <img id="" src={Jajce} alt="" className="fl pa2 br4 w-40"/>
+                    <img id="" src={Jajce} alt="" className="fl-ns center pa2-ns br4 w-auto w-40-ns"/>
                     <p>
                         Jajce is a city that has always been situated on important intersections on which trading routes,
                         nationalities, cultures and even rivers meet. It's a city that is attracting visitors with its 
@@ -122,7 +123,7 @@ const TheIndirectRoute = () => {
                         cityscape shots from mt. Trebević, where the photogenic leftovers from the 1984 Olympic
                         Winter Games will appear oftenly in your camera's viewfinder.
                     </p>
-                    <img id="" src={Idbar} alt="" className="pa2 br4 w-90"/>
+                    <img id="" src={Idbar} alt="" className="center pa2-ns br4 w-auto"/>
                     <p>
                         Leaving the capital. This is when we met with the E73, a road I have driven on a few times
                         before but one that never ceases to amaze me. It winds its way south through beautiful
@@ -144,7 +145,7 @@ const TheIndirectRoute = () => {
                     <div className="bg-washed-green center mw5 mw8-ns">
                         <ImageGallery items={gallery1} showThumbnails={false} showBullets={true}/>
                     </div>
-                    <img id="" src={E73} alt="" className="fr pa2 br4 w-95"/>
+                    <img id="" src={E73} alt="" className="fr-ns mv3 center pa2-ns br4 w-auto w-90-ns"/>
                     <p>
                         As we were driving further towards the south on the E73 we were going further back into
                         Yugoslavia's history. The town of Jablanica got us to the year 1943. This is when World War
@@ -160,7 +161,7 @@ const TheIndirectRoute = () => {
                         that the Partisans will not head eastwards over the river but towards the north and for that
                         reason ordered their forces to concentrate in that area. It was a tactical deception. 
                     </p>
-                    <img id="" src={Jablanica} alt="" className="fl pa2 br4 w-20"/>
+                    <img id="" src={Jablanica} alt="" className="fl-ns center pa2-ns br4 w-auto w-30-ns"/>
                     <p>
                         Right after the demolition of one of the bridges in Jablanica a
                         makeshift bridge was made on its ruins thus enabling the
@@ -183,7 +184,7 @@ const TheIndirectRoute = () => {
                         and turns. Eventually it brought us into a valley where a
                         big sculpture appeared, visible from afar.
                     </p>
-                    <img id="" src={Sutjeska} alt="" className="fr pa2 br4 w-40"/>
+                    <img id="" src={Sutjeska} alt="" className="fr-ns center pa2-ns br4 w-auto w-40-ns"/>
                     <p>
                         The Valley of heroes is a monument to all of those who lost their lives in the battle to escape
                         another encirclement. There were 127 000 Axis troops around the Partisans and 300 enemy
@@ -210,7 +211,7 @@ const TheIndirectRoute = () => {
                         upon a beautiful empty beach where a
                         chance to cool off and rest a bit occurs.
                     </p>
-                    <img id="" src={Makarska} alt="" className="fl pa2 br4 w-30"/>
+                    <img id="" src={Makarska} alt="" className="fr-ns center pa2-ns br4 w-auto w-30-ns"/>
                     <p>
                         We were passing one island after another. Slowly, my left arm was getting browner that my
                         right one which was hiding in the shade and mingling with the gear shifter. Eventually we
@@ -227,15 +228,16 @@ const TheIndirectRoute = () => {
                         greeting visitors and enjoyed
                         a dish of grilled meat.
                     </p>
-                    <img id="" src={BeachBarMini} alt="" className="fr pa2 br4 w-40"/>
+                    
                     <p>
-                        Reached home some 300 miles later in the evening of the next day. Moved the gear lever
+                        We reached our homes some 300 miles later in the evening of the next day. Moved the gear lever
                         into the reverse position and maneuvered the car slowly into the garage. In the meanwhile,
                         soundwaves were exiting through the tip of the exhaust system, bouncing from the garage
                         walls and were making their way to neighbouring houses. ˝They are probably used to it by
                         now,˝ I said to myself, but my guess is that they still don't like it, especially at 10 o'clock in
                         the evening.
                     </p>
+                    <img id="" src={BeachBarMini} alt="" className="center pa2-ns br4 w-auto w-40-ns"/>
                 </div>
             </div>
         </div>
