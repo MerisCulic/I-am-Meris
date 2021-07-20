@@ -8,6 +8,7 @@ import GraphicDesign from '../components/Pages/GraphicDesign/GraphicDesign';
 import Photography from '../components/Pages/Photography/Photography';
 import TheIndirectRoute from '../components/Pages/Trips/TheIndirectRoute/TheIndirectRoute';
 import ChernobylTrip from '../components/Pages/Trips/ChernobylTrip/ChernobylTrip';
+import LegendeKragujevca from '../components/Pages/Trips/LegendeKragujevca/LegendeKragujevca';
 import ErrorBoundary from '../components/ErrorBoundary/ErrorBoundary';
 import './App.css';
 
@@ -36,7 +37,7 @@ class App extends Component {
     const {route, gallery} = this.state;
 
     let page;
-    if (route === 'home') {
+    if (route === 'home'){
         page = "";
     } else if (route === 'apod'){
         page = <NASA />;
@@ -51,8 +52,11 @@ class App extends Component {
     } else if (route === 'theIndirectRoute'){
         page = <TheIndirectRoute />;
     } else if (route === 'chernobylTrip'){
-      page = <ChernobylTrip />;
-  }
+        page = <ChernobylTrip />;
+    } else if (route === 'legendeKragujevca'){
+        page = <LegendeKragujevca />;
+    }
+  
 
     return (
       <div className="App">

@@ -145,7 +145,7 @@ const TheIndirectRoute = () => {
                     <div className="bg-washed-green center mw5 mw8-ns">
                         <ImageGallery items={gallery1} showThumbnails={false} showBullets={true}/>
                     </div>
-                    <img id="" src={E73} alt="" className="fr-ns mv3 center pa2-ns br4 w-auto w-90-ns"/>
+                    <img id="" src={E73} alt="" className="fr-ns mv3 center pa2-ns br4 w-auto w-50-ns"/>
                     <p>
                         As we were driving further towards the south on the E73 we were going further back into
                         Yugoslavia's history. The town of Jablanica got us to the year 1943. This is when World War
