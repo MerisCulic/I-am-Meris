@@ -295,7 +295,7 @@ const ChernobylTrip = ({toggleFullscreen}) => {
                 <h3 className="pl3">A road trip into the Chernobyl exclusion zone</h3>
                 <div className="bg-washed-green pa2 br4">
                     <img id="ZKS" src={ZKS} alt="" 
-                        className="fl-ns center pa2 br4 mw7-ns w-90 pointer" onClick={() => toggleFullscreen("ZKS")}/>
+                        className="fl-ns center pa2-ns br4 mw7-ns w-auto pointer" onClick={() => toggleFullscreen("ZKS")}/>
                     <p>
                         Imagine, you go through life as most people do – you wake up in the morning and go to work, 
                         return home 8 or 12 hours later, do your chores and then spend the rest of the day with your 
@@ -347,7 +347,7 @@ const ChernobylTrip = ({toggleFullscreen}) => {
                         of Kiev and trying out some tasty local dishes. But what we were eagerly waiting for was our 150-kilometer-long trip northbound 
                         from the Ukrainian capital. 
                     </p>
-                    <div className="bg-washed-green center mw5 mw8-ns">
+                    <div className="bg-washed-green center mw8-ns pa2-ns w-100">
                         <ImageGallery items={gallery1} showThumbnails={false} showBullets={true}/>
                     </div>
                     <p>
@@ -375,7 +375,7 @@ const ChernobylTrip = ({toggleFullscreen}) => {
                         of the Chernobyl disaster. Soon we found ourselves entering a kindergarten and its eerily silent playground. Usually 
                         places that are filled with joy and laughter.
                     </p>
-                    <div className="bg-washed-green center mw5 mw8-ns">
+                    <div className="bg-washed-green center mw8-ns pa2-ns w-100">
                         <ImageGallery items={gallery2} showThumbnails={false} showBullets={true}/>
                     </div>
                     <p>
@@ -398,7 +398,7 @@ const ChernobylTrip = ({toggleFullscreen}) => {
                         lucky ones real gas masks. Called Liquidators, seven hundred thousand men were conscripted into the Chernobyl area to “liquidate” 
                         the released radiation. Hailed as heroes in 1986, they are now discarded and forgotten.
                     </p>
-                    <div className="bg-washed-green center mw5 mw8-ns">
+                    <div className="bg-washed-green center mw5 mw8-ns pa2-ns w-100">
                         <ImageGallery items={gallery3} showThumbnails={false} showBullets={true}/>
                     </div>
                     <p>
@@ -416,7 +416,7 @@ const ChernobylTrip = ({toggleFullscreen}) => {
                         exploring the city and its museums. The most memorable were the Ukrainian National Chernobyl museum and the Oleg Antonov State aviation 
                         museum. The size of some of those soviet birds was mindboggling. 
                     </p>
-                    <div className="bg-washed-green center mw5 mw8-ns">
+                    <div className="bg-washed-green center mw5 mw8-ns pa2-ns w-100">
                         <ImageGallery items={gallery4} showThumbnails={false} showBullets={true}/>
                     </div>
                     <p>

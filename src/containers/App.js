@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import screenfull from 'screenfull';
 import NavigationBar from '../components/Navigation/NavigationBar';
 import Homepage from '../components/Homepage/Homepage';
 import NASA from '../components/Pages/NASA/NASA';
@@ -11,7 +12,6 @@ import ChernobylTrip from '../components/Pages/Trips/ChernobylTrip/ChernobylTrip
 import LegendeKragujevca from '../components/Pages/Trips/LegendeKragujevca/LegendeKragujevca';
 import ErrorBoundary from '../components/ErrorBoundary/ErrorBoundary';
 import './App.css';
-import screenfull from 'screenfull';
 
 
 const initialState = {
