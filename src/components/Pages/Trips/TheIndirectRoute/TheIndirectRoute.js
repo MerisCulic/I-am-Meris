@@ -25,7 +25,7 @@ const gallery1 = [
 ];
 
 
-const TheIndirectRoute = () => {
+const TheIndirectRoute = ({toggleFullscreen}) => {
     return (
         <>
         <div className="TheIndirectRoute">
@@ -51,7 +51,9 @@ const TheIndirectRoute = () => {
                         heading to the capital. It takes little over an hour to get from Jesenice to Ljubljana without a
                         highway vignette. It is a road that was a great warm up for the roads to come.
                     </p>
-                    <img id="" src={Zeljava2} alt="" className="fl-ns center pa2-ns br4 w-auto w-40-ns"/>
+                    <img id="Zeljava2" src={Zeljava2} alt="" 
+                        className="fl-ns center pa2-ns br4 w-auto w-40-ns pointer" onClick={() => toggleFullscreen("Zeljava2")}
+                    />
                     <p>
                         In Ljubljana I met up with my friend whose Austin Mini clubman estate was proudly showing its fresh black paint
                         and was eagerly awaiting for us to embark on our journey. But where were we heading anyway? Our destination for
@@ -82,7 +84,8 @@ const TheIndirectRoute = () => {
                         more than 50 tonnes of explosives used. The passing time didn't help it either but the area is
                         still very interesting to explore.
                     </p>
-                    <img id="" src={Zeljava1} alt="" className="fr-ns center pa2-ns br4 w-auto w-40-ns"/>
+                    <img id="Zeljava1" src={Zeljava1} alt="" 
+                        className="fr-ns center pa2-ns br4 w-auto w-40-ns pointer" onClick={() => toggleFullscreen("Zeljava1")}/>
                     <p>
                         Once back outside, a longer look at the runway might persuade you for a high speed run.
                         Keep in mind though, it is located on the border itself. Crossing it at high speed might grab
@@ -93,7 +96,8 @@ const TheIndirectRoute = () => {
                         kinks got ironed out quite nicely. Slower traffic was no longer a problem and was easily left in
                         our dust as the oncoming vehicles could be spotted miles in advance.
                     </p>
-                    <img id="" src={Jajce} alt="" className="fl-ns center pa2-ns br4 w-auto w-40-ns"/>
+                    <img id="Jajce" src={Jajce} alt="" 
+                        className="fl-ns center pa2-ns br4 w-auto w-40-ns pointer" onClick={() => toggleFullscreen("Jajce")}/>
                     <p>
                         Jajce is a city that has always been situated on important intersections on which trading routes,
                         nationalities, cultures and even rivers meet. It's a city that is attracting visitors with its 
@@ -123,7 +127,8 @@ const TheIndirectRoute = () => {
                         cityscape shots from mt. Trebević, where the photogenic leftovers from the 1984 Olympic
                         Winter Games will appear oftenly in your camera's viewfinder.
                     </p>
-                    <img id="" src={Idbar} alt="" className="center pa2-ns br4 w-auto"/>
+                    <img id="Idbar" src={Idbar} alt="" 
+                        className="center pa2-ns br4 w-auto pointer" onClick={() => toggleFullscreen("Idbar")}/>
                     <p>
                         Leaving the capital. This is when we met with the E73, a road I have driven on a few times
                         before but one that never ceases to amaze me. It winds its way south through beautiful
@@ -145,7 +150,8 @@ const TheIndirectRoute = () => {
                     <div className="bg-washed-green center mw5 mw8-ns">
                         <ImageGallery items={gallery1} showThumbnails={false} showBullets={true}/>
                     </div>
-                    <img id="" src={E73} alt="" className="fr-ns mv3 center pa2-ns br4 w-auto w-50-ns"/>
+                    <img id="E73" src={E73} alt="" 
+                        className="fr-ns mv3 center pa2-ns br4 w-auto w-50-ns pointer" onClick={() => toggleFullscreen("E73")}/>
                     <p>
                         As we were driving further towards the south on the E73 we were going further back into
                         Yugoslavia's history. The town of Jablanica got us to the year 1943. This is when World War
@@ -161,30 +167,23 @@ const TheIndirectRoute = () => {
                         that the Partisans will not head eastwards over the river but towards the north and for that
                         reason ordered their forces to concentrate in that area. It was a tactical deception. 
                     </p>
-                    <img id="" src={Jablanica} alt="" className="fl-ns center pa2-ns br4 w-auto w-30-ns"/>
+                    <img id="Jablanica" src={Jablanica} alt="" 
+                        className="fl-ns center pa2-ns br4 w-auto w-30-ns pointer" onClick={() => toggleFullscreen("Jablanica")}/>
                     <p>
-                        Right after the demolition of one of the bridges in Jablanica a
-                        makeshift bridge was made on its ruins thus enabling the
-                        22000 Partisans, 4000 of which were wounded, to cross
-                        over Neretva and slip out of the deadly encirclement.
-                        The wounded were saved. A walk around the local
-                        museum gives you a more in-depth look of the events as
-                        well as a look at the equipment and weapons used at the
-                        time while overlooking the river with a rusty steel bridge
-                        sticking out of it. Tito and his men retreated to an area in
-                        eastern Bosnia that is today known as the Sutjeska
-                        national park, where another major battle sparked after
-                        the Axis caught up with them a month later. A decision to
-                        follow history's footsteps got us driving eastwards on the
-                        M6.1. The road was somewhere in good condition,
-                        somewhere in a bit of a rough state and somewhere
-                        completely absent where the occasional avalanche hid it
-                        from our eyes. Most of the time we had the road just for
-                        ourselves which was quite fun with its sweeping twists
-                        and turns. Eventually it brought us into a valley where a
-                        big sculpture appeared, visible from afar.
+                        Right after the demolition of one of the bridges in Jablanica a makeshift bridge was made on its ruins 
+                        thus enabling the 22000 Partisans, 4000 of which were wounded, to cross over Neretva and slip out of 
+                        the deadly encirclement. The wounded were saved. A walk around the local museum gives you a more in-depth 
+                        look of the events as well as a look at the equipment and weapons used at the time while overlooking the 
+                        river with a rusty steel bridge sticking out of it. Tito and his men retreated to an area in
+                        eastern Bosnia that is today known as the Sutjeska national park, where another major battle sparked after
+                        the Axis caught up with them a month later. A decision to follow history's footsteps got us driving eastwards 
+                        on the M6.1. The road was somewhere in good condition, somewhere in a bit of a rough state and somewhere
+                        completely absent where the occasional avalanche hid it from our eyes. Most of the time we had the road just 
+                        for ourselves which was quite fun with its sweeping twists and turns. Eventually it brought us into a valley 
+                        where a big sculpture appeared, visible from afar.
                     </p>
-                    <img id="" src={Sutjeska} alt="" className="fr-ns center pa2-ns br4 w-auto w-40-ns"/>
+                    <img id="Sutjeska" src={Sutjeska} alt="" 
+                        className="fr-ns center pa2-ns br4 w-auto w-40-ns pointer" onClick={() => toggleFullscreen("Sutjeska")}/>
                     <p>
                         The Valley of heroes is a monument to all of those who lost their lives in the battle to escape
                         another encirclement. There were 127 000 Axis troops around the Partisans and 300 enemy
@@ -202,31 +201,22 @@ const TheIndirectRoute = () => {
                         highway. It is simply put a great experience for nature lovers as well as passionate drivers
                         alike as every mile of it delivers breathtaking coastal panorama. Somewhere it takes you
                         high up the hills where you can admire the views of seemingly endless islands and
-                        somewhere it takes you down to almost
-                        sea level where you can witness the battle
+                        somewhere it takes you down to almost sea level where you can witness the battle
                         between the waves and the coastal rocks. It goes through calm, picturesque fishing
-                        villages as well as through bustling major
-                        seaside cities. It's a true delight, made
-                        even sweeter if you happen to stumble
-                        upon a beautiful empty beach where a
+                        villages as well as through bustling major seaside cities. It's a true delight, made
+                        even sweeter if you happen to stumble upon a beautiful empty beach where a
                         chance to cool off and rest a bit occurs.
                     </p>
-                    <img id="" src={Makarska} alt="" className="fr-ns center pa2-ns br4 w-auto w-30-ns"/>
+                    <img id="Makarska" src={Makarska} alt="" 
+                        className="fr-ns center pa2-ns br4 w-auto w-30-ns pointer" onClick={() => toggleFullscreen("Makarska")}/>
                     <p>
                         We were passing one island after another. Slowly, my left arm was getting browner that my
                         right one which was hiding in the shade and mingling with the gear shifter. Eventually we
                         reached the city of Šibenik where the newly opened Beach Bar Mini is situated. What was
-                        supposed to be a four to five
-                        hour long drive, depending on
-                        the highway traffic, ended up
-                        being a 1200 mile, one week
-                        long road trip. The day ended
-                        with a barbecue on the
-                        seaside where even Morris,
-                        the bar's puppy mascot, took
-                        a break from his job of
-                        greeting visitors and enjoyed
-                        a dish of grilled meat.
+                        supposed to be a four to five hour long drive, depending on the highway traffic, ended up
+                        being a 1200 mile, one week long road trip. The day ended with a barbecue on the
+                        seaside where even Morris, the bar's puppy mascot, took a break from his job of
+                        greeting visitors and enjoyed a dish of grilled meat.
                     </p>
                     
                     <p>
@@ -237,12 +227,12 @@ const TheIndirectRoute = () => {
                         now,˝ I said to myself, but my guess is that they still don't like it, especially at 10 o'clock in
                         the evening.
                     </p>
-                    <img id="" src={BeachBarMini} alt="" className="center pa2-ns br4 w-auto w-40-ns"/>
+                    <img id="BeachBarMini" src={BeachBarMini} alt="" 
+                        className="center pa2-ns br4 w-auto w-40-ns pointer" onClick={() => toggleFullscreen("BeachBarMini")}/>
                 </div>
             </div>
         </div>
         </>
-
     )
 }
 

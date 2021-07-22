@@ -11,6 +11,7 @@ import ChernobylTrip from '../components/Pages/Trips/ChernobylTrip/ChernobylTrip
 import LegendeKragujevca from '../components/Pages/Trips/LegendeKragujevca/LegendeKragujevca';
 import ErrorBoundary from '../components/ErrorBoundary/ErrorBoundary';
 import './App.css';
+import screenfull from 'screenfull';
 
 
 const initialState = {
@@ -33,6 +34,13 @@ class App extends Component {
     this.setState({gallery: gallery})
   }
 
+  toggleFullscreen = (id) => {
+    let ref = document.getElementById(id);
+    if(screenfull.isEnabled) {
+      screenfull.toggle(ref);
+    }
+  }
+
   render() {
     const {route, gallery} = this.state;
 
@@ -50,9 +58,9 @@ class App extends Component {
     } else if (route === 'photography'){
         page = <Photography gallery={gallery} onGalleryChange={this.onGalleryChange}/>;
     } else if (route === 'theIndirectRoute'){
-        page = <TheIndirectRoute />;
+        page = <TheIndirectRoute toggleFullscreen={this.toggleFullscreen}/>;
     } else if (route === 'chernobylTrip'){
-        page = <ChernobylTrip />;
+        page = <ChernobylTrip  toggleFullscreen={this.toggleFullscreen}/>;
     } else if (route === 'legendeKragujevca'){
         page = <LegendeKragujevca />;
     }
