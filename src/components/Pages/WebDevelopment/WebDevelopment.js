@@ -5,6 +5,8 @@ import NinjaTech from "./Logos/NinjaTechForum.png";
 import SmartBrain from "./Logos/SmartBrain.png";
 import GuessTheNumber from "./Logos/GuessTheNumber.png";
 import Robofriends from "./Logos/Robofriends.png";
+import BookBits from "./Logos/BookBits.png";
+
 
 const WebDevelopment = () => {
     return (
@@ -19,6 +21,25 @@ const WebDevelopment = () => {
                             <p>This website was created with the use of React framework.</p>
                             <h4 className="viewCode pointer shadow-3 grow" 
                                 onClick={()=> window.open("https://github.com/MerisCulic/I-am-Meris", "_blank")}>
+                                View Code
+                            </h4>
+                        </div>
+                    </div>
+                    <hr></hr>
+                    <div className="applistitem">
+                        <img src={BookBits} alt="" width="auto" className="applogo ma2 pointer br3 shadow-3 grow"
+                            onClick={()=> window.open("https://book-bits.herokuapp.com/", "_blank")}
+                        />
+                        <div className="ma2">
+                            <p>
+                                Have you stumbled upon a great idea, fact or quote while reading? Has that little bit of your book
+                                made you think, or maybe question things? Share it with others on Book Bits.
+                            </p>
+                            <p>
+                                Created with Python, flask and Bootstrap.
+                            </p>
+                            <h4 className="viewCode pointer shadow-3 grow" 
+                                onClick={()=> window.open("https://github.com/MerisCulic/BookBits", "_blank")}>
                                 View Code
                             </h4>
                         </div>

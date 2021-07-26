@@ -398,7 +398,7 @@ const ChernobylTrip = ({toggleFullscreen}) => {
                         lucky ones real gas masks. Called Liquidators, seven hundred thousand men were conscripted into the Chernobyl area to “liquidate” 
                         the released radiation. Hailed as heroes in 1986, they are now discarded and forgotten.
                     </p>
-                    <div className="bg-washed-green center mw5 mw8-ns pa2-ns w-100">
+                    <div className="bg-washed-green center mw8-ns pa2-ns w-100">
                         <ImageGallery items={gallery3} showThumbnails={false} showBullets={true}/>
                     </div>
                     <p>
@@ -416,7 +416,7 @@ const ChernobylTrip = ({toggleFullscreen}) => {
                         exploring the city and its museums. The most memorable were the Ukrainian National Chernobyl museum and the Oleg Antonov State aviation 
                         museum. The size of some of those soviet birds was mindboggling. 
                     </p>
-                    <div className="bg-washed-green center mw5 mw8-ns pa2-ns w-100">
+                    <div className="bg-washed-green center mw8-ns pa2-ns w-100">
                         <ImageGallery items={gallery4} showThumbnails={false} showBullets={true}/>
                     </div>
                     <p>
