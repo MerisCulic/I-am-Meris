@@ -1,5 +1,5 @@
 import React from 'react';
-import MerisLogo from './Logos/merisLogo.png';
+import merisLogo from './Logos/merislogo.png';
 import homeLogo from './Logos/homeLogo.png';
 import finger from './Logos/finger.png';
 import './NavigationBar.css';
@@ -26,7 +26,7 @@ const NavigationBar = ({route, onRouteChange}) => {
 
     let logo;
     if(route === 'home') {
-        logo = MerisLogo;
+        logo = merisLogo;
     } else {
         logo = homeLogo;
     }
