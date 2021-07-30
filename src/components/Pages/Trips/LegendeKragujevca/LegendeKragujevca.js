@@ -102,12 +102,12 @@ const gallery2 = [
         original: IMG32,    }
 ];
 
-const LegendeKragujevca = () => {
+const LegendeKragujevca = ({toggleFullscreen}) => {
     return (
         <div className="gallery bg-light-green pa2 br4 fl w-100 shadow-3">
             <h1 className="dib pa2 v-top">Legende Kragujevca (SLO)</h1>
             <div className="bg-washed-green pa2 br4">
-            <img id="" src={IMG1} alt="" className="fr-ns center pa2-ns br4 w-90 w-50-ns"/>
+            <img id="IMG1" src={IMG1} alt="" className="fr-ns center br4 w-50-ns pa2-ns w-100" onClick={() => toggleFullscreen("IMG1")}/>
                 <p>
                     Zima nam vsako leto zagode, predvsem prebivalcem krajev kjer se je asfalt primoran srečati s soljo, 
                     zaradi česar naša starodobna prevozna sredstva nekoliko podaljšajo mesece v »toplih garažah«. A vendar, 

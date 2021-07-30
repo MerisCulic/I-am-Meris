@@ -62,16 +62,16 @@ class App extends Component {
     } else if (route === 'chernobylTrip'){
         page = <ChernobylTrip  toggleFullscreen={this.toggleFullscreen}/>;
     } else if (route === 'legendeKragujevca'){
-        page = <LegendeKragujevca />;
+        page = <LegendeKragujevca toggleFullscreen={this.toggleFullscreen}/>;
     }
   
 
     return (
       <div className="App">
         <ErrorBoundary>
-          <NavigationBar onRouteChange={this.onRouteChange} />
+          <NavigationBar route={route} onRouteChange={this.onRouteChange} />
           <Homepage onRouteChange={this.onRouteChange} />
-          <div className="Page">
+          <div className="page">
               {page}
           </div>
         </ErrorBoundary>

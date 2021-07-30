@@ -1,9 +1,11 @@
 import React from 'react';
-import logo from './Logos/merislogo.png';
+import MerisLogo from './Logos/merisLogo.png';
+import homeLogo from './Logos/homeLogo.png';
+import finger from './Logos/finger.png';
 import './NavigationBar.css';
 
 
-const NavigationBar = ({onRouteChange}) => {
+const NavigationBar = ({route, onRouteChange}) => {
 
     function dropdownMenu() {
         document.getElementById("myDropdown").classList.toggle("show");
@@ -11,20 +13,29 @@ const NavigationBar = ({onRouteChange}) => {
       
     window.onclick = function(event) {
         if (!event.target.matches('.dropbtn')) {
-            var dropdowns = document.getElementsByClassName("dropdown-content");
-            var i;
+            let dropdowns = document.getElementsByClassName("dropdown-content");
+            let i;
             for (i = 0; i < dropdowns.length; i++) {
-            var openDropdown = dropdowns[i];
-            if (openDropdown.classList.contains('show')) {
-                openDropdown.classList.remove('show');
-            }
+                let openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                }
             }
         }
+    }
+
+    let logo;
+    if(route === 'home') {
+        logo = MerisLogo;
+    } else {
+        logo = homeLogo;
     }
     
     return (
         <div className="navbar pa3">
-            <img id="navbarLogo" onClick={() => onRouteChange("home")} className="pointer" src={logo} alt=""/>
+            <img id="finger" className="slideInOut" src={finger} alt=""/>
+            <img id="navbarLogo" className="pointer" src={logo} alt=""
+                onClick={() => { onRouteChange("home")}}/>
             <div className="dropdown pointer">
                 <button onClick={() => dropdownMenu()}  className="dropbtn">
                     Menu

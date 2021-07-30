@@ -25,15 +25,6 @@ body {
     max-height:254px
 }
 
-#homeArrow {
-    position: fixed;
-    top: 150px;
-    left: 40px;
-    transform: rotate(-8deg);
-    width: 150px;
-    height: auto;
-}
-
 #AboutLogo {
     position: fixed;
     top: 30px;
@@ -59,15 +50,6 @@ body {
 
     .projectsNavigation {
         top: 60%
-    }
-
-    #homeArrow {
-        position: fixed;
-        top: 30px;
-        left: 100px;
-        transform: rotate(-57deg);
-        width: 80px;
-        height: auto;
     }
 
     #NASApatch {
@@ -103,10 +85,6 @@ body {
     }
 
     #AboutLogo {
-        display: none;
-    }
-
-    #homeArrow {
         display: none;
     }
 

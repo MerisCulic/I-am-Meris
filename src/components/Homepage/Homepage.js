@@ -3,7 +3,6 @@ import NASApatch from "./Images/APOD-patch.png";
 import WebDevLogo from "./Images/WebDevLogo.png";
 import GraphicDesignLogo from "./Images/GraphicDesignLogo.png";
 import PhotographyLogo from "./Images/PhotographyLogo.png";
-import HomeArrow from "./Images/home.png";
 import AboutMe from "./Images/AboutMe.png";
 import "./Homepage.css";
 
@@ -27,7 +26,6 @@ const Homepage = ({onRouteChange}) => {
                 </div>
             </div>
             <img id="AboutLogo" className="pointer pa2" src={AboutMe} alt="" onClick={() => onRouteChange("aboutme")}/>
-            <img id="homeArrow" className="" src={HomeArrow} alt="" />
             <img id="NASApatch" className="pointer pa4 " src={NASApatch} alt="" onClick={() => onRouteChange("apod")} />
         </div>
     )

@@ -7,17 +7,28 @@
     z-index: 3;
 }
 
-.navbar img {
-    transition: transform .4s ease-in-out;
-}
 
 #navbarLogo {
+    border-radius: 50%;
     max-width: 120px;
     height: auto;
     animation: 
-        rollIn 1s backwards 2s,
-        pulse 1s 4s;
-    transition: transform 2s ease-in-out;
+        slideInLeft 2s backwards 1s;
+}
+
+#finger {
+    z-index: 4;
+    position: fixed;
+    top: 10;
+    left: 0;
+    width: auto;
+    height: 90px;      
+}
+
+.slideInOut {
+    animation: 
+        slideInLeft 2s backwards 1s,
+        slideOutLeft 1s forwards 3.4s; 
 }
 
 .dropbtn {
@@ -73,7 +84,12 @@
     }
 
     #navbarLogo {
+        animation: none;
         width: 80px;
+    }
+
+    #finger {
+        display: none;
     }
 }
 
