@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import screenfull from 'screenfull';
 import NavigationBar from '../components/Navigation/NavigationBar';
 import Homepage from '../components/Homepage/Homepage';
-import NASA from '../components/Pages/NASA/NASA';
+import APOD from '../components/Pages/APOD/APOD';
 import AboutMe from '../components/Pages/AboutMe/AboutMe';
 import WebDevelopment from '../components/Pages/WebDevelopment/WebDevelopment';
 import GraphicDesign from '../components/Pages/GraphicDesign/GraphicDesign';
@@ -48,7 +48,7 @@ class App extends Component {
     if (route === 'home'){
         page = "";
     } else if (route === 'apod'){
-        page = <NASA />;
+        page = <APOD toggleFullscreen={this.toggleFullscreen}/>;
     } else if (route === 'aboutme'){
         page = <AboutMe onRouteChange={this.onRouteChange}/>;
     } else if (route === 'webdev'){

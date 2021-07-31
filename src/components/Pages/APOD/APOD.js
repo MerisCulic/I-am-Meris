@@ -1,10 +1,12 @@
+/* Astronomy Photo Of the Day  */
+
 import React, { useState, useEffect } from "react";
-import "./NASA.css";
+import "./APOD.css";
 import NASAicon from "./NASA-icon.png";
 
 const apiKey = process.env.REACT_APP_NASA_API_KEY;
 
-export default function NASA() {
+export default function NASA({toggleFullscreen}) {
     const [photoData, setPhotoData] = useState(null);
   
     useEffect(() => {
@@ -32,19 +34,23 @@ export default function NASA() {
                     <div className="nasa-photo">
                         {photoData.media_type === "image" ? (
                             <img
-                            src={photoData.url}
-                            alt={photoData.title}
-                            className="photo br4"
+                                id="apod-photo"
+                                src={photoData.url}
+                                alt={photoData.title}
+                                className="photo pointer br4"
+                                onClick={() => toggleFullscreen("apod-photo")}
                             />
                         ) : (
                             <iframe
-                            title="space-video"
-                            src={photoData.url}
-                            frameBorder="0"
-                            gesture="media"
-                            allow="encrypted-media"
-                            allowFullScreen
-                            className="photo"
+                                id="apod-video"
+                                title="space-video"
+                                src={photoData.url}
+                                frameBorder="0"
+                                gesture="media"
+                                allow="encrypted-media"
+                                allowFullScreen
+                                className="photo pointer"
+                                onClick={() => toggleFullscreen("apod-video")}
                             />
                         )}
                         <p className="explanation pa3">{photoData.explanation}</p>

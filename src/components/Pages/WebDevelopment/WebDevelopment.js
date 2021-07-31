@@ -18,7 +18,11 @@ const WebDevelopment = () => {
                     <div className="applistitem">
                         <img src={IamMeris} alt="" width="auto" className="applogo ma2 br3 shadow-3"/>
                         <div className="ma2">
-                            <p>This website was created with the use of React framework.</p>
+                            <p>
+                                Wanted a website of my own for quite a while now, so here it is. 
+                                It was built with React JS and is equipped with a resposive design. 
+                                Try it out on differently sized screens. 
+                            </p>
                             <h4 className="viewCode pointer shadow-3 grow" 
                                 onClick={()=> window.open("https://github.com/MerisCulic/I-am-Meris", "_blank")}>
                                 View Code
@@ -63,8 +67,12 @@ const WebDevelopment = () => {
                             onClick={()=> window.open("https://smart-brain--face-det-app.herokuapp.com/", "_blank")}
                         />
                         <div className="ma2">
-                            <p>Face recognition application with the use of Clarifai AI API (final project for ZTM course).
-                               Find a photo online of a face and copy its URL into the input and see if it works (hope so..). 
+                            <p>
+                                A face recognition app that uses the Clarifai API (application programming interface) to detect a face within an image.
+                                Find a photo of a face online and copy its URL into the input and try it out. 
+                            </p>
+                            <p>
+                                React JS, final ZTM course project.
                             </p>
                             <h4 className="viewCode pointer shadow-3 grow" 
                                 onClick={()=> window.open("https://github.com/MerisCulic/Smart_Brain_api", "_blank")}>
@@ -78,7 +86,7 @@ const WebDevelopment = () => {
                             onClick={()=> window.open("https://robofriends-ztm.herokuapp.com/", "_blank")}
                         />
                         <div className="ma2">
-                            <p>A quick filtering app created with React (ZTM academy training).</p>
+                            <p>A fast filtering app created with React (ZTM academy training).</p>
                             <h4 className="viewCode pointer shadow-3 grow" 
                                 onClick={()=> window.open("https://github.com/MerisCulic/Robofriends", "_blank")}>
                                 View Code
@@ -91,7 +99,7 @@ const WebDevelopment = () => {
                             onClick={()=> window.open("https://guess-the-secret-number-game.herokuapp.com/", "_blank")}
                         />
                         <div className="ma2">
-                            <p>See how many times it takes you to guess the correct number (Smart Ninja training).</p>
+                            <p>See how many times it takes you to guess the correct number (Python, Smart Ninja training).</p>
                             <h4 className="viewCode pointer shadow-3 grow" 
                                 onClick={()=> window.open("https://github.com/MerisCulic/Guess_the_number", "_blank")}>
                                 View Code

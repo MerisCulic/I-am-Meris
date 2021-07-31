@@ -36,7 +36,7 @@ const TheIndirectRoute = ({toggleFullscreen}) => {
                         Something that I point out oftenly as journeys get enriched by the stories written along the
                         way. Once that sentence gets wired into your brain you try implementing it in every situation
                         you can. One evening on a mid april's day the late hour tranquility got interrupted by an
-                        incoming call. It was a friend of mine who mentioned that two of our friends opened up a bar
+                        incoming call. It was a friend of mine who mentioned that two of our friends had opened up a bar
                         on the Croatian coast and proposed a trip to their location to pay them a visit. It is a trip that
                         lasts four to five hours, depending on the highway traffic. But we are not fans of highways.
                         We prefer roads that give you the feeling of exploration with each passing corner, roads with
@@ -44,7 +44,7 @@ const TheIndirectRoute = ({toggleFullscreen}) => {
                         Ignition key inserted and turned half-way. A buzzing sound appeared. It was the fuel pump
                         prepping the car's life lines. After that, soundwaves started exiting through the tip of the
                         aftermarket exhaust system, bounced from the garage walls and were making their way to
-                        neighbouring houses. ˝It's ok,˝ I said to myself, ˝they are probably used to it by now.˝ But my
+                        neighbouring houses. "It's ok," I said to myself, "they are probably used to it by now." But my
                         guess is that they still don't like it, especially at 6 o'clock in the morning so no time was to
                         spare. First gear selected and a minimum rev start followed. It was a calm, sunray filled
                         Sunday. The roads were empty. For a while it was just me and my classic Rover mini
@@ -69,7 +69,7 @@ const TheIndirectRoute = ({toggleFullscreen}) => {
                         drive further brought us to our next point of interest - Rastoke. It's a milling settlement some
                         300 years old that was constructed next to gorgeous waterfalls and rapids, a place where
                         nature showed its playful and artistic side. The Korana river connects it to the famous
-                        Plitvice lakes and is for that reason also known as ˝the small lakes of Plitvice.˝ A few pictures
+                        Plitvice lakes and is for that reason also known as "the small lakes of Plitvice." A few pictures
                         taken, a few cups emptied and quite a few wheel rotations made and we ended up
                         overlooking the Bosnian border but wouldn't cross it just yet as a historic gem is hidden near
                         it. Object 505 or better known as airfield Željava. It is a military airfield hidden within a
@@ -223,8 +223,8 @@ const TheIndirectRoute = ({toggleFullscreen}) => {
                         We reached our homes some 300 miles later in the evening of the next day. Moved the gear lever
                         into the reverse position and maneuvered the car slowly into the garage. In the meanwhile,
                         soundwaves were exiting through the tip of the exhaust system, bouncing from the garage
-                        walls and were making their way to neighbouring houses. ˝They are probably used to it by
-                        now,˝ I said to myself, but my guess is that they still don't like it, especially at 10 o'clock in
+                        walls and were making their way to neighbouring houses. "They are probably used to it by
+                        now," I said to myself, but my guess is that they still don't like it, especially at 10 o'clock in
                         the evening.
                     </p>
                     <img id="BeachBarMini" src={BeachBarMini} alt="" 

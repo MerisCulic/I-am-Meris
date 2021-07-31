@@ -28,7 +28,7 @@
 .slideInOut {
     animation: 
         slideInLeft 2s backwards 1s,
-        slideOutLeft 1s forwards 3.4s; 
+        slideOutLeft 0.5s forwards 3.5s; 
 }
 
 .dropbtn {
@@ -96,5 +96,9 @@
 @media(max-height: 560px) {
     #navbarLogo {
         width: 90px;
+    }
+
+    #finger {
+        height: 60px;
     }
 }
