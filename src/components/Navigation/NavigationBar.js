@@ -5,23 +5,10 @@ import finger from './Logos/finger.png';
 import './NavigationBar.css';
 
 
-const NavigationBar = ({route, onRouteChange}) => {
+const NavigationBar = ({route, onRouteChange, toggleContactCard}) => {
 
     function dropdownMenu() {
         document.getElementById("myDropdown").classList.toggle("show");
-    }
-      
-    window.onclick = function(event) {
-        if (!event.target.matches('.dropbtn')) {
-            let dropdowns = document.getElementsByClassName("dropdown-content");
-            let i;
-            for (i = 0; i < dropdowns.length; i++) {
-                let openDropdown = dropdowns[i];
-                if (openDropdown.classList.contains('show')) {
-                    openDropdown.classList.remove('show');
-                }
-            }
-        }
     }
 
     let logo;
@@ -43,6 +30,7 @@ const NavigationBar = ({route, onRouteChange}) => {
                 <div id="myDropdown" className="dropdown-content">
                     <p onClick={() => onRouteChange("home")}>Home</p>
                     <p onClick={() => onRouteChange("aboutme")}>About</p>
+                    <p id="dropdownContact" onClick={() => toggleContactCard()}>Contact</p>
                 </div>
             </div>
         </div>

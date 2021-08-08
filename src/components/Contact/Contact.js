@@ -8,6 +8,7 @@ import './Contact.css';
 
 
 const Contact = () => {
+
     function copyFunc() {
         let tooltip = document.getElementById("myTooltip");
         try {
@@ -22,28 +23,29 @@ const Contact = () => {
 
     function outFunc() {
         let tooltip = document.getElementById("myTooltip");
-        tooltip.innerHTML = "Copy to clipboard";
+        tooltip.innerHTML = "Copy e-mail to clipboard";
     }
 
     return (
         <>
-        <div className="Contact">
-            <h3 className="">Contact</h3>
-            <div className="flex">
-                <div className="tooltip">
-                    <img id="" src={location} alt="" width="30px" height="auto" className="pa2 pointer grow"/>
-                    <span className="tooltiptext" id="location">Jesenice, Slovenia</span>
+        <div id="contact" className="contact">
+            <div id="contactCard" className="contactCard">
+                <div className="contactLinks flex">
+                    <div className="tooltip">
+                        <img id="" src={location} alt="" width="30px" height="auto" className="pa2 pointer grow"/>
+                        <span className="tooltiptext" id="location">Jesenice, Slovenia</span>
+                    </div>
+                    <div className="tooltip">
+                        <img id="email" src={email} alt="" width="30px" height="auto" className="pa2 pointer grow" 
+                            onClick={()=> copyFunc()}
+                            onMouseOut={()=> outFunc()}
+                        />
+                        <span className="tooltiptext" id="myTooltip">Copy e-mail to clipboard</span>
+                    </div>
+                    <img id="" src={github} alt="" width="30px" height="auto" className="pa2 pointer grow" onClick={()=> window.open("https://github.com/MerisCulic", "_blank")}/>
+                    <img id="" src={fb} alt="" width="30px" height="auto" className="pa2 pointer grow" onClick={()=> window.open("https://www.facebook.com/meris.culic", "_blank")}/>
+                    <img id="" src={ig} alt="" width="30px" height="auto" className="pa2 pointer grow" onClick={()=> window.open("https://www.instagram.com/merisculic/", "_blank")}/>       
                 </div>
-                <div className="tooltip">
-                    <img id="email" src={email} alt="" width="30px" height="auto" className="pa2 pointer grow" 
-                        onClick={()=> copyFunc()}
-                        onMouseOut={()=> outFunc()}
-                    />
-                    <span className="tooltiptext" id="myTooltip">Copy to clipboard</span>
-                </div>
-                <img id="" src={github} alt="" width="30px" height="auto" className="pa2 pointer grow" onClick={()=> window.open("https://github.com/MerisCulic", "_blank")}/>
-                <img id="" src={fb} alt="" width="30px" height="auto" className="pa2 pointer grow" onClick={()=> window.open("https://www.facebook.com/meris.culic", "_blank")}/>
-                <img id="" src={ig} alt="" width="30px" height="auto" className="pa2 pointer grow" onClick={()=> window.open("https://www.instagram.com/merisculic/", "_blank")}/>       
             </div>
         </div>
         </>

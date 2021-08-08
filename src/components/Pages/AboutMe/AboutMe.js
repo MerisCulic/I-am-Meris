@@ -7,7 +7,6 @@ import WBW from "./Images/WBW.png";
 import Startalk from "./Images/Startalk.jpg";
 import TimFerris from "./Images/TimFerris.jpg";
 import ChooseFi from "./Images/ChooseFi.png";
-import Contact from '../../Contact/Contact';
 
 
 const AboutMe = ({onRouteChange}) => {
@@ -67,7 +66,6 @@ const AboutMe = ({onRouteChange}) => {
                             </ul>
                         </div>  
                     </div>                   
-                    <Contact />
                 </div>
                 <h4 className="tc"><i>This website was made with love and is powered by coffee.</i></h4>
             </div>

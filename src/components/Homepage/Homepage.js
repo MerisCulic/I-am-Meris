@@ -3,10 +3,11 @@ import NASApatch from "./Images/APOD-patch.png";
 import WebDevLogo from "./Images/WebDevLogo.png";
 import GraphicDesignLogo from "./Images/GraphicDesignLogo.png";
 import PhotographyLogo from "./Images/PhotographyLogo.png";
-import AboutMe from "./Images/AboutMe.png";
+import AboutMeLabel from "./Images/AboutMeLabel.png";
+import ContactLabel from "./Images/ContactLabel.png";
 import "./Homepage.css";
 
-const Homepage = ({onRouteChange}) => {
+const Homepage = ({onRouteChange, toggleContactCard}) => {
     return (
         <div>
             <div className="projectsNavigation">
@@ -25,7 +26,8 @@ const Homepage = ({onRouteChange}) => {
                     </div>
                 </div>
             </div>
-            <img id="AboutLogo" className="pointer pa2" src={AboutMe} alt="" onClick={() => onRouteChange("aboutme")}/>
+            <img id="AboutLabel" className="pointer pa2" src={AboutMeLabel} alt="" onClick={() => onRouteChange("aboutme")}/>
+            <img id="ContactLabel" className="pointer pa2" src={ContactLabel} alt="" onClick={() => toggleContactCard()}/>
             <img id="NASApatch" className="pointer pa4 " src={NASApatch} alt="" onClick={() => onRouteChange("apod")} />
         </div>
     )

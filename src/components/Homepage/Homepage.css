@@ -25,13 +25,23 @@ body {
     max-height:254px
 }
 
-#AboutLogo {
+#AboutLabel {
     position: fixed;
     top: 30px;
     right: 30px;
     max-width: 150px;
     height: 45px;
     transform: rotate(8deg);
+    z-index: 1;
+}
+
+#ContactLabel {
+    position: fixed;
+    top: 100px;
+    right: 30px;
+    max-width: 150px;
+    height: 48px;
+    transform: rotate(-4deg);
     z-index: 1;
 }
 
@@ -60,12 +70,21 @@ body {
         max-height:254px
     }
 
-    #AboutLogo {
+    #AboutLabel {
         top: 30px;
         right: 30px;
         max-width: 120px;
         height: 35px;
         transform: rotate(8deg);
+        z-index: 1;
+    }
+
+    #ContactLabel {
+        top: 80px;
+        right: 30px;
+        max-width: 135px;
+        height: 38px;
+        transform: rotate(-4deg);
         z-index: 1;
     }
 }
@@ -84,11 +103,15 @@ body {
         padding: 0;
     }
 
-    #AboutLogo {
+    #AboutLabel {
         display: none;
     }
 
     .child {
+        display: none;
+    }
+
+    #ContactLabel {
         display: none;
     }
 }  
