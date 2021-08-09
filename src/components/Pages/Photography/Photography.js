@@ -1,6 +1,7 @@
 import React from 'react';
 import ImageGallery from 'react-image-gallery';
 import "./Photography.css";
+
 import weddings1 from "./Images/Weddings/Weddings(1).jpg";
 import weddings2 from "./Images/Weddings/Weddings(2).jpg";
 import weddings3 from "./Images/Weddings/Weddings(3).jpg";
@@ -15,6 +16,18 @@ import weddings11 from "./Images/Weddings/Weddings(11).jpg";
 import weddings12 from "./Images/Weddings/Weddings(12).jpg";
 import weddings13 from "./Images/Weddings/Weddings(13).jpg";
 import weddings14 from "./Images/Weddings/Weddings(14).jpg";
+import weddings15 from "./Images/Weddings/Weddings(15).jpg";
+import weddings16 from "./Images/Weddings/Weddings(16).jpg";
+import weddings17 from "./Images/Weddings/Weddings(17).jpg";
+import weddings18 from "./Images/Weddings/Weddings(18).jpg";
+import weddings19 from "./Images/Weddings/Weddings(19).jpg";
+import weddings20 from "./Images/Weddings/Weddings(20).jpg";
+import weddings21 from "./Images/Weddings/Weddings(21).jpg";
+import weddings22 from "./Images/Weddings/Weddings(22).jpg";
+import weddings23 from "./Images/Weddings/Weddings(23).jpg";
+import weddings24 from "./Images/Weddings/Weddings(24).jpg";
+import weddings25 from "./Images/Weddings/Weddings(25).jpg";
+import weddings26 from "./Images/Weddings/Weddings(26).jpg";
 
 import products1 from "./Images/Products/Products(1).jpg";
 import products2 from "./Images/Products/Products(2).jpg";
@@ -108,6 +121,54 @@ const Photography =({gallery, onGalleryChange}) => {
             {
                 original: weddings14,
                 thumbnail: weddings14,
+            },
+            {
+                original: weddings15,
+                thumbnail: weddings15,
+            },
+            {
+                original: weddings16,
+                thumbnail: weddings16,
+            },
+            {
+                original: weddings17,
+                thumbnail: weddings17,
+            },
+            {
+                original: weddings18,
+                thumbnail: weddings18,
+            },
+            {
+                original: weddings19,
+                thumbnail: weddings19,
+            },
+            {
+                original: weddings20,
+                thumbnail: weddings20,
+            },
+            {
+                original: weddings21,
+                thumbnail: weddings21,
+            },
+            {
+                original: weddings22,
+                thumbnail: weddings22,
+            },
+            {
+                original: weddings23,
+                thumbnail: weddings23,
+            },
+            {
+                original: weddings24,
+                thumbnail: weddings24,
+            },
+            {
+                original: weddings25,
+                thumbnail: weddings25,
+            },
+            {
+                original: weddings26,
+                thumbnail: weddings26,
             }
         ]
     } else if(gallery === "products"){
