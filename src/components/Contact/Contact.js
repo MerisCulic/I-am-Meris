@@ -9,6 +9,7 @@ import './Contact.css';
 
 const Contact = () => {
 
+    /* Copy e-mail address to clipboard */
     function copyFunc() {
         let tooltip = document.getElementById("myTooltip");
         try {
@@ -21,6 +22,7 @@ const Contact = () => {
         }
     }
 
+    /* Show e-mail tooltip on hover */
     function outFunc() {
         let tooltip = document.getElementById("myTooltip");
         tooltip.innerHTML = "Copy e-mail to clipboard";

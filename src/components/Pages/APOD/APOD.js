@@ -6,7 +6,7 @@ import NASAicon from "./NASA-icon.png";
 
 const apiKey = process.env.REACT_APP_NASA_API_KEY;
 
-export default function NASA({toggleFullscreen}) {
+const APOD = ({toggleFullscreen}) => {
     const [photoData, setPhotoData] = useState(null);
   
     useEffect(() => {
@@ -67,3 +67,4 @@ export default function NASA({toggleFullscreen}) {
     );
 }
 
+export default APOD;

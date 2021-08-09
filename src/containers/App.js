@@ -46,13 +46,15 @@ class App extends Component {
   toggleContactCard = () => {
     let card = document.getElementById("contactCard");
     if(!this.state.isContactVisible) {
+      /* Show Contact Card */
       return (
         card.classList.remove('hideCard'),
         card.classList.add('showCard'),
         card.style.display = 'block', 
         this.setState({isContactVisible: true})
       )
-    } else if(this.state.isContactVisible){
+    } else {
+      /* Hide Contact Card */
       return (
         card.classList.remove('showCard'),
         card.classList.add('hideCard'),
@@ -85,10 +87,10 @@ class App extends Component {
                 openDropdown.classList.remove('show');
             }
         }
-    }
+      }
     } 
 
-
+    /* Page router */
     let page;
     if (route === 'home'){
         page = "";

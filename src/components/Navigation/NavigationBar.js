@@ -7,10 +7,12 @@ import './NavigationBar.css';
 
 const NavigationBar = ({route, onRouteChange, toggleContactCard}) => {
 
+    /* Small screen dropdown menu */
     function dropdownMenu() {
         document.getElementById("myDropdown").classList.toggle("show");
     }
 
+    /* Toggle main logo and homepage logo */
     let logo;
     if(route === 'home') {
         logo = merisLogo;
@@ -22,7 +24,7 @@ const NavigationBar = ({route, onRouteChange, toggleContactCard}) => {
         <div className="navbar pa3">
             <img id="finger" className="slideInOut" src={finger} alt=""/>
             <img id="navbarLogo" className="pointer" src={logo} alt=""
-                onClick={() => { onRouteChange("home")}}/>
+                onClick={() => onRouteChange("home")}/>
             <div className="dropdown pointer">
                 <button onClick={() => dropdownMenu()}  className="dropbtn">
                     Menu
