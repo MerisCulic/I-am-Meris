@@ -71,20 +71,20 @@ body {
     }
 
     #AboutLabel {
-        top: 30px;
-        right: 30px;
-        max-width: 120px;
-        height: 35px;
-        transform: rotate(8deg);
+        top: 5px;
+        right: 10px;
+        max-width: 90px;
+        height: 27px;
+        transform: rotate(-3deg);
         z-index: 1;
     }
 
     #ContactLabel {
-        top: 80px;
-        right: 30px;
-        max-width: 135px;
-        height: 38px;
-        transform: rotate(-4deg);
+        top: 45px;
+        right: 7px;
+        max-width: 90px;
+        height: 30px;
+        transform: rotate(3deg);
         z-index: 1;
     }
 }

@@ -77,6 +77,34 @@
     opacity: 1;
 }
 
+@media (max-height: 560px) {
+    .contactCard {
+        width: 520px;
+        height: 360px;
+        right: 0;
+        margin-right: -30px;
+        top: 20%;
+    }
+
+    @keyframes showContactCard {
+        0% {margin-right: -600px; top: 5%; width: 600px; height: 440px; transform: rotate(20deg); }
+        100% {margin-right: -30px; top: 20%; width: 520px; height: 360px;  transform: rotate(0deg); }
+    }
+
+    .contactLinks {
+        position: absolute;
+        left: 25px;
+        top: 110px;
+        
+    }
+
+    .contactLinks img {
+        width: 30px;
+        height: 30px;
+        padding:5px;
+    }
+}
+
 @media (max-width: 580px) {
     .contactCard {
         background-image: url('Images/contactCardSM.png');

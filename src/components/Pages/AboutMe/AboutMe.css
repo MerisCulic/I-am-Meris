@@ -17,3 +17,13 @@
         display: block;
     }
 }
+
+@media (max-width: 580px) {
+    .webSurfIcon {
+        height: 60px;
+    }
+
+    .web-surf ul {
+        padding: 0px;
+    }
+}

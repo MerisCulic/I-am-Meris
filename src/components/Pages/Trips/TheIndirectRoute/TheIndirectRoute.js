@@ -31,6 +31,7 @@ const TheIndirectRoute = ({toggleFullscreen}) => {
         <div className="TheIndirectRoute">
             <div className="gallery bg-light-green pa2 br4 w-100 shadow-3">
                 <h1 className="dib pa2 v-top">Taking the indirect route</h1>
+                <h3 className="pl3">A journey through Yugoslavia's history pages</h3>
                 <div className="bg-washed-green pa2 br4">
                     <p>It's not just about getting to your destination, it's about experiencing all in the between.
                         Something that I point out oftenly as journeys get enriched by the stories written along the

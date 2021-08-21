@@ -40,7 +40,7 @@ const WebDevelopment = () => {
                                 made you think, or maybe question things? Share it with others on Book Bits.
                             </p>
                             <p>
-                                Created with Python, flask and Bootstrap.
+                                Created with Python, flask and Bootstrap. Connected to AWS S3 for storing files.
                             </p>
                             <h4 className="viewCode pointer shadow-3 grow" 
                                 onClick={()=> window.open("https://github.com/MerisCulic/BookBits", "_blank")}>
