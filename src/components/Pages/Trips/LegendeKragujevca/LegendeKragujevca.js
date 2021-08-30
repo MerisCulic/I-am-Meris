@@ -104,7 +104,7 @@ const gallery2 = [
 
 const LegendeKragujevca = ({toggleFullscreen}) => {
     return (
-        <div className="gallery bg-light-green pa2 br4 fl w-100 shadow-3">
+        <div className="bg-light-green pa2 mb5 br4 fl w-100 shadow-3">
             <h1 className="dib pa2 v-top">Legende Kragujevca (SLO)</h1>
             <div className="bg-washed-green pa2 br4">
             <img id="IMG1" src={IMG1} alt="" className="fr-ns center br4 w-50-ns pa2-ns w-100" onClick={() => toggleFullscreen("IMG1")}/>

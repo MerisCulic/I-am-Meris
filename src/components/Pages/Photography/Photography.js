@@ -299,7 +299,7 @@ const Photography =({gallery, onGalleryChange}) => {
     return (
         <>
         <div className="Photography">
-            <div className="gallery bg-light-green pa2 br4 fl w-100 shadow-3">
+            <div className="bg-light-green pa2 mb5 br4 fl w-100 shadow-3">
                 <h1 className="dib pa2 v-top">Photography</h1>
                 <div className="bg-washed-green pa2 br4 fl w-100">
                 <div className="subgalleries flex justify-around">

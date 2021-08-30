@@ -21,8 +21,13 @@ body {
     width: auto;
 }
 
-.gallery {
-    margin-bottom: 30px;
+.image-gallery-image {
+    height: 60vh;
+}
+
+.image-gallery-thumbnail-image {
+    height: 10vh;
+    object-fit: cover;
 }
 
 @media (max-width: 1024px) {

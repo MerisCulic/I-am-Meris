@@ -26,7 +26,7 @@ const APOD = ({toggleFullscreen}) => {
     return (
         <>
         <div className="center">
-            <div className="gallery bg-light-green pa2 br4 fl w-100 shadow-3">
+            <div className="bg-light-green pa2 mb5 br4 fl w-100 shadow-3">
                 <h1 className="f3 f2-m f1-l pa2">Astronomy Picture Of The Day</h1>
                 <div className="bg-washed-green pa2 br4">
                     <h2 className="f5 f4-m f3-l fl w-100">{photoData.title}</h2>

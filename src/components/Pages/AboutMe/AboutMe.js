@@ -13,7 +13,7 @@ const AboutMe = ({onRouteChange}) => {
     return (
         <>
         <div className="AboutMe">
-            <div className="gallery bg-light-green pa2 br4 fl w-100 shadow-3">
+            <div className="mb6 bg-light-green pa2 br4 fl w-100 shadow-3">
                 <img id="MerisPhoto" src={MerisPhoto} alt="" width="90px" height="auto" className="pa2 br4"/>
                 <h1 className="dib pa2 v-top">Hello!</h1>
                 <div className="bg-washed-green pa2 br4">
@@ -22,7 +22,7 @@ const AboutMe = ({onRouteChange}) => {
                         sometimes even as a company logo on a bussiness card or as a memory-trigger of someone's 
                         first car on their new coffee mug. With a spark of curiosity and a wish to expand my usefullness I delved into the world
                         of web deveopment and found that creating web applications is a fun experience. Through countless online resources and 
-                        a coding bootcamp called Smart Ninja I learned HTML5, CSS3, Python, flask, JavaScript, React, mySQL, git, Heroku and GitHub.</p>
+                        a coding bootcamp called Smart Ninja I learned HTML5, CSS3, Python, Flask, JavaScript, React, MySQL, Git and Heroku.</p>
                     <p>
                         My favourite way of spending free time is with exploration - travelling through foreign countries, finding new interesting 
                         places in our own, finding out what makes someone tick, and learning new things that I find interesting. 

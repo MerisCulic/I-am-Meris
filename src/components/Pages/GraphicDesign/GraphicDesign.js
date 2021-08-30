@@ -91,7 +91,7 @@ class GraphicDesign extends Component {
     render() {
         return (
             <>
-            <div className="gallery bg-light-green pa2 br4 fl w-100 shadow-3">
+            <div className="bg-light-green pa2 mb5 br4 fl w-100 shadow-3">
                 <h1 className="dib pa2 v-top">Graphic design</h1>
                 <div className="bg-washed-green pa2 br4 fl w-100">
                     <ImageGallery items={images}/>
