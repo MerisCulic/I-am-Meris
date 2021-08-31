@@ -25,6 +25,10 @@ body {
     height: 60vh;
 }
 
+.fullscreen .image-gallery-image {
+    height: 85vh;
+}
+
 .image-gallery-thumbnail-image {
     height: 10vh;
     object-fit: cover;

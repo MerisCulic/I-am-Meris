@@ -94,7 +94,7 @@ class GraphicDesign extends Component {
             <div className="bg-light-green pa2 mb5 br4 fl w-100 shadow-3">
                 <h1 className="dib pa2 v-top">Graphic design</h1>
                 <div className="bg-washed-green pa2 br4 fl w-100">
-                    <ImageGallery items={images}/>
+                    <ImageGallery items={images} />
                 </div>
             </div>    
             </>
