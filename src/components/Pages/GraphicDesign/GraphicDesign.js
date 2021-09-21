@@ -18,6 +18,7 @@ import GD13 from "./Images/GD (13).jpg";
 import GD14 from "./Images/GD (14).jpg";
 import GD15 from "./Images/GD (15).jpg";
 import GD16 from "./Images/GD (16).jpg";
+import GD17 from "./Images/GD (17).jpg";
 
 
 const images = [
@@ -84,6 +85,10 @@ const images = [
     {
         original: GD16,
         thumbnail: GD16,
+    },
+    {
+        original: GD17,
+        thumbnail: GD17,
     }
   ];
   

@@ -41,6 +41,10 @@ import products9 from "./Images/Products/Products(9).jpg";
 import products10 from "./Images/Products/Products(10).jpg";
 import products11 from "./Images/Products/Products(11).jpg";
 import products12 from "./Images/Products/Products(12).jpg";
+import products13 from "./Images/Products/Products(13).JPG";
+import products14 from "./Images/Products/Products(14).JPG";
+import products15 from "./Images/Products/Products(15).JPG";
+import products16 from "./Images/Products/Products(16).JPG";
 
 import meetings1 from "./Images/Meetings/Meetings(1).jpg";
 import meetings2 from "./Images/Meetings/Meetings(2).jpg";
@@ -220,6 +224,22 @@ const Photography =({gallery, onGalleryChange}) => {
             {
                 original: products12,
                 thumbnail: products12,
+            },
+            {
+                original: products13,
+                thumbnail: products13,
+            },
+            {
+                original: products14,
+                thumbnail: products14,
+            },
+            {
+                original: products15,
+                thumbnail: products15,
+            },
+            {
+                original: products16,
+                thumbnail: products16,
             }
         ]
     } else if(gallery === "meetings"){
