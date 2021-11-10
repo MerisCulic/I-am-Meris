@@ -1,6 +1,6 @@
 import React from 'react';
 import './AboutMe.css';
-import MerisPhoto from "./Images/Meris.JPG";
+import MerisPhoto from "./Images/Meris.jpg";
 import MMM from "./Images/MMM.png";
 import ORG from "./Images/ORG.png";
 import WBW from "./Images/WBW.png";
