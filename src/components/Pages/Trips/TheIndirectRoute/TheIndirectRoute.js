@@ -42,6 +42,8 @@ const TheIndirectRoute = ({toggleFullscreen}) => {
                         lasts four to five hours, depending on the highway traffic. But we are not fans of highways.
                         We prefer roads that give you the feeling of exploration with each passing corner, roads with
                         a story to tell. A decision was made to go for it but with a bit longer route in mind.
+                    </p>
+                    <p>
                         Ignition key inserted and turned half-way. A buzzing sound appeared. It was the fuel pump
                         prepping the car's life lines. After that, soundwaves started exiting through the tip of the
                         aftermarket exhaust system, bounced from the garage walls and were making their way to
@@ -129,7 +131,7 @@ const TheIndirectRoute = ({toggleFullscreen}) => {
                         Winter Games will appear oftenly in your camera's viewfinder.
                     </p>
                     <img id="Idbar" src={Idbar} alt="" 
-                        className="center pa2-ns br4 w-auto pointer" onClick={() => toggleFullscreen("Idbar")}/>
+                        className="center  br4 w-100-ns pointer" onClick={() => toggleFullscreen("Idbar")}/>
                     <p>
                         Leaving the capital. This is when we met with the E73, a road I have driven on a few times
                         before but one that never ceases to amaze me. It winds its way south through beautiful
@@ -229,7 +231,7 @@ const TheIndirectRoute = ({toggleFullscreen}) => {
                         the evening.
                     </p>
                     <img id="BeachBarMini" src={BeachBarMini} alt="" 
-                        className="center pa2-ns br4 w-auto w-40-ns pointer" onClick={() => toggleFullscreen("BeachBarMini")}/>
+                        className="center pt2-ns br4 w-100-ns pointer" onClick={() => toggleFullscreen("BeachBarMini")}/>
                 </div>
             </div>
         </div>

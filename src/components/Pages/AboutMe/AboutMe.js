@@ -1,6 +1,6 @@
 import React from 'react';
 import './AboutMe.css';
-import MerisPhoto from "./Images/Meris.jpg";
+import MerisPhoto from "./Images/Meris.JPG";
 import MMM from "./Images/MMM.png";
 import ORG from "./Images/ORG.png";
 import WBW from "./Images/WBW.png";
@@ -19,10 +19,10 @@ const AboutMe = ({onRouteChange}) => {
                 <div className="bg-washed-green pa2 br4">
                     <h2 className="fl w-100">My name is Meris</h2>
                     <p>..and I enjoy expressing my creative side which usually ends up as a photo in a photo album or as an event poster on a busy street, 
-                        sometimes even as a company logo on a bussiness card or as a memory-trigger of someone's 
+                        sometimes even as a company logo on a bussiness card or as a memory trigger of someone's 
                         first car on their new coffee mug. With a spark of curiosity and a wish to expand my usefullness I delved into the world
                         of web deveopment and found that creating web applications is a fun experience. Through countless online resources and 
-                        a coding bootcamp called Smart Ninja I learned HTML5, CSS3, Python, Flask, JavaScript, React, MySQL, Git and Heroku.</p>
+                        a coding bootcamp called Smart Ninja I learned HTML, CSS, SASS, Python, Flask, JavaScript, React, MySQL, WordPress, Git and Heroku.</p>
                     <p>
                         My favourite way of spending free time is with exploration - travelling through foreign countries, finding new interesting 
                         places in our own, finding out what makes someone tick, and learning new things that I find interesting. 
@@ -37,7 +37,7 @@ const AboutMe = ({onRouteChange}) => {
                     </ul>
                     <h3 className="pv2">Where I web surf</h3>
                     <div className="web-surf">
-                        <div>
+                        <div className="pl2">
                             <h4>Favourite blogs:</h4>
                             <ul className="flex">
                                 <img id="WBW" src={WBW} alt="" width="auto" height="90px" className="pa2 pointer grow webSurfIcon"
@@ -51,7 +51,7 @@ const AboutMe = ({onRouteChange}) => {
                                 />
                             </ul>
                         </div>
-                        <div>
+                        <div className="pl2">
                             <h4>Favourite podcasts:</h4>
                             <ul className="flex">
                                 <img id="Startalk" src={Startalk} alt="" width="auto" height="90px" className="pa2 pointer grow webSurfIcon"

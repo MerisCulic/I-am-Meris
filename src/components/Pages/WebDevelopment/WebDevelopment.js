@@ -50,19 +50,6 @@ const WebDevelopment = () => {
                     </div>
                     <hr></hr>
                     <div className="applistitem">
-                        <img src={NinjaTech} alt="" width="auto" className="applogo ma2 pointer br3 shadow-3 grow"
-                            onClick={()=> window.open("https://ninja-tech-forum.herokuapp.com/", "_blank")}
-                        />
-                        <div className="ma2">
-                            <p>A basic forum built with Python (Smart Ninja Web Development 2 training).</p>
-                            <h4 className="viewCode pointer shadow-3 grow" 
-                                onClick={()=> window.open("https://github.com/MerisCulic/NinjaTechForum", "_blank")}>
-                                View Code
-                            </h4>
-                        </div>
-                    </div>
-                    <hr></hr>
-                    <div className="applistitem">
                         <img src={SmartBrain} alt="" width="auto" className="applogo ma2 pointer br3 shadow-3 grow"
                             onClick={()=> window.open("https://smart-brain--face-det-app.herokuapp.com/", "_blank")}
                         />
@@ -92,6 +79,19 @@ const WebDevelopment = () => {
                                 View Code
                             </h4>
                         </div>  
+                    </div>
+                    <hr></hr>
+                    <div className="applistitem">
+                        <img src={NinjaTech} alt="" width="auto" className="applogo ma2 pointer br3 shadow-3 grow"
+                            onClick={()=> window.open("https://ninja-tech-forum.herokuapp.com/", "_blank")}
+                        />
+                        <div className="ma2">
+                            <p>A basic forum built with Python (Smart Ninja Web Development 2 training).</p>
+                            <h4 className="viewCode pointer shadow-3 grow" 
+                                onClick={()=> window.open("https://github.com/MerisCulic/NinjaTechForum", "_blank")}>
+                                View Code
+                            </h4>
+                        </div>
                     </div>
                     <hr></hr>
                     <div className="applistitem">
