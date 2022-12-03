@@ -5,7 +5,8 @@
 }
 
 .appdesc {
-    position: relative;
+    display: flex;
+    flex-direction: column;
 }
 
 .viewCode {
@@ -14,8 +15,6 @@
     border-radius: 10px;
     padding: 1em;
     width:fit-content;
-    position: absolute;
-    bottom: 0;
 }
 
 @media (max-width: 580px) {
