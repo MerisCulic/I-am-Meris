@@ -11,14 +11,9 @@ body {
     background-size: cover;
 }
 
-.page {
-    margin-left: 15vw;
-    margin-right: 15vw;
-    margin-top: 10vh;
-    position: relative;
-    z-index: 2;
-    height: fit-content;
-    width: auto;
+.text-link {
+    color: inherit;
+    text-decoration: inherit;
 }
 
 .image-gallery-image {

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './AboutMe.css';
 import MerisPhoto from "./Images/Meris.jpg";
 import MMM from "./Images/MMM.png";
@@ -9,7 +10,7 @@ import TimFerris from "./Images/TimFerris.jpg";
 import ChooseFi from "./Images/ChooseFi.png";
 
 
-const AboutMe = ({onRouteChange}) => {
+const AboutMe = () => {
     return (
         <>
         <div className="AboutMe">
@@ -31,9 +32,9 @@ const AboutMe = ({onRouteChange}) => {
                         Sometimes some of these free time activities end up in a written form: 
                     </p>
                     <ul>
-                        <li className="pointer dim" onClick={() => onRouteChange("theIndirectRoute")}><i>Taking the indirect route</i></li>
-                        <li className="pointer dim" onClick={() => onRouteChange("chernobylTrip")}><i>The (un)peacefull atom</i></li>
-                        <li className="pointer dim" onClick={() => onRouteChange("legendeKragujevca")}><i>Legende Kragujevca (SLO)</i></li>
+                        <Link to="/the-indirect-route" className='text-link'><li className="pointer dim"><i>Taking the indirect route</i></li></Link>
+                        <Link to="/unpeacefull-atom" className='text-link'><li className="pointer dim"><i>The (un)peacefull atom</i></li></Link>
+                        <Link to="/legende-kragujevca" className='text-link'><li className="pointer dim"><i>Legende Kragujevca (SLO)</i></li></Link>
                     </ul>
                     <h3 className="pv2">Where I web surf</h3>
                     <div className="web-surf">

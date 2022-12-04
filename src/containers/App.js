@@ -1,5 +1,7 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
+import { Route, Routes } from "react-router-dom";
 import screenfull from 'screenfull';
+import PageLayout from '../components/Pages/PageLayout';
 import NavigationBar from '../components/Navigation/NavigationBar';
 import Homepage from '../components/Homepage/Homepage';
 import APOD from '../components/Pages/APOD/APOD';
@@ -16,7 +18,6 @@ import './App.css';
 
 
 const initialState = {
-  route: 'home',
   gallery: 'weddings',
   isContactVisible: false
 }
@@ -26,10 +27,6 @@ class App extends Component {
   constructor() {
     super()
     this.state = initialState
-  }
-
-  onRouteChange = (route) => {
-    this.setState({route: route})
   }
 
   onGalleryChange = (gallery) => {
@@ -68,7 +65,7 @@ class App extends Component {
   
 
   render() {
-    const {route, gallery, isContactVisible} = this.state;
+    const {gallery, isContactVisible} = this.state;
 
     /* Hide small screen dropdown menu and/or contact card when off-clicking */
     window.onclick = (event) => {
@@ -90,37 +87,25 @@ class App extends Component {
       }
     } 
 
-    /* Page router */
-    let page;
-    if (route === 'home'){
-        page = "";
-    } else if (route === 'apod'){
-        page = <APOD toggleFullscreen={this.toggleFullscreen}/>;
-    } else if (route === 'aboutme'){
-        page = <AboutMe onRouteChange={this.onRouteChange}/>;
-    } else if (route === 'webdev'){
-        page = <WebDevelopment />;
-    } else if (route === 'graphicdesign'){
-        page = <GraphicDesign />;
-    } else if (route === 'photography'){
-        page = <Photography gallery={gallery} onGalleryChange={this.onGalleryChange}/>;
-    } else if (route === 'theIndirectRoute'){
-        page = <TheIndirectRoute toggleFullscreen={this.toggleFullscreen}/>;
-    } else if (route === 'chernobylTrip'){
-        page = <ChernobylTrip  toggleFullscreen={this.toggleFullscreen}/>;
-    } else if (route === 'legendeKragujevca'){
-        page = <LegendeKragujevca toggleFullscreen={this.toggleFullscreen}/>;
-    }
-  
-
     return (
       <div className="App">
         <ErrorBoundary>
-          <NavigationBar route={route} onRouteChange={this.onRouteChange} toggleContactCard={this.toggleContactCard}/>
-          <Homepage onRouteChange={this.onRouteChange} toggleContactCard={this.toggleContactCard}/>
-          <div className="page">
-              {page}
-          </div>
+          <NavigationBar toggleContactCard={this.toggleContactCard} />
+          <Homepage toggleContactCard={this.toggleContactCard} />
+          <Routes>
+            <Route element={<PageLayout />} >
+              <Route path="/" element={""} />
+              <Route path="/about-me" element={<AboutMe />} />
+              <Route path="/apod" element={<APOD toggleFullscreen={this.toggleFullscreen}/>} />
+              <Route path="/web-development" element={<WebDevelopment />} />
+              <Route path="/graphic-design" element={<GraphicDesign />} />
+              <Route path="/photography" element={<Photography gallery={gallery} onGalleryChange={this.onGalleryChange}/>} />
+              <Route path="/the-indirect-route" element={<TheIndirectRoute toggleFullscreen={this.toggleFullscreen}/>} />
+              <Route path="/unpeacefull-atom" element={<ChernobylTrip  toggleFullscreen={this.toggleFullscreen}/>} />
+              <Route path="/legende-kragujevca" element={<LegendeKragujevca toggleFullscreen={this.toggleFullscreen}/>} />
+            </Route>
+            <Route path="*" element={<ErrorBoundary />} />
+          </Routes>
           <Contact />
         </ErrorBoundary>
       </div>

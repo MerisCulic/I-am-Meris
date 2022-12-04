@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 
 class ErrorBoundary extends Component {
@@ -28,9 +29,11 @@ class ErrorBoundary extends Component {
                     <br />
                     {this.state.errorInfo.componentStack}
                   </details>
-                  <button className="ma2" onClick={()=> window.location.reload()}>
-                    Return to home page
-                  </button>
+                  <Link to="/" className='text-link'>
+                    <button className="ma2">
+                      Return to home page
+                    </button>
+                  </Link>
                 </div>
                 
               </div>
