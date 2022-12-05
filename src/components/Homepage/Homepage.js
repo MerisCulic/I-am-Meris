@@ -16,19 +16,19 @@ const Homepage = ({toggleContactCard}) => {
                     <Link to="/web-development" className='text-link'>
                         <div className="hide-child ma1">
                             <img id="webdevIcon" className="pointer" src={WebDevLogo} alt=""/>
-                            <p className="bg-washed-green br3 pa2 pointer child tc">Web development</p>
+                            <p className="bg-white-70 br3 pa2 pointer child tc">Web development</p>
                         </div>
                     </Link>
                     <Link to="/graphic-design" className='text-link'>
                         <div className="hide-child ma1">
                             <img id="graphicdesignIcon" className="pointer" src={GraphicDesignLogo} alt=""/>
-                            <p className="bg-washed-green br3 pa2 pointer child tc">Graphic design</p>
+                            <p className="bg-white-70 br3 pa2 pointer child tc">Graphic design</p>
                         </div>
                     </Link>
                     <Link to="/photography" className='text-link'>
                         <div className="hide-child ma1">
                             <img id="photographyIcon" className="pointer" src={PhotographyLogo} alt=""/>
-                            <p className="bg-washed-green br3 pa2 pointer child tc">Photography</p>
+                            <p className="bg-white-70 br3 pa2 pointer child tc">Photography</p>
                         </div>
                     </Link>
                 </div>
