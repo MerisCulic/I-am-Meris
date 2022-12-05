@@ -22,7 +22,7 @@ const Homepage = ({toggleContactCard}) => {
                     <Link to="/graphic-design" className='text-link'>
                         <div className="hide-child ma1">
                             <img id="graphicdesignIcon" className="pointer" src={GraphicDesignLogo} alt=""/>
-                            <p className="bg-washed-green br3 ma4 pa2 pointer child tc">Graphic design</p>
+                            <p className="bg-washed-green br3 pa2 pointer child tc">Graphic design</p>
                         </div>
                     </Link>
                     <Link to="/photography" className='text-link'>
