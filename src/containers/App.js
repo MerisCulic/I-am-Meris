@@ -1,20 +1,21 @@
-import React, { Component } from 'react';
+import React, { Component, Suspense, lazy } from 'react';
 import { Route, Routes } from "react-router-dom";
 import screenfull from 'screenfull';
 import PageLayout from '../components/Pages/PageLayout';
 import NavigationBar from '../components/Navigation/NavigationBar';
 import Homepage from '../components/Homepage/Homepage';
-import APOD from '../components/Pages/APOD/APOD';
 import AboutMe from '../components/Pages/AboutMe/AboutMe';
 import WebDevelopment from '../components/Pages/WebDevelopment/WebDevelopment';
-import GraphicDesign from '../components/Pages/GraphicDesign/GraphicDesign';
-import Photography from '../components/Pages/Photography/Photography';
-import TheIndirectRoute from '../components/Pages/Trips/TheIndirectRoute/TheIndirectRoute';
-import ChernobylTrip from '../components/Pages/Trips/ChernobylTrip/ChernobylTrip';
-import LegendeKragujevca from '../components/Pages/Trips/LegendeKragujevca/LegendeKragujevca';
 import ErrorBoundary from '../components/ErrorBoundary/ErrorBoundary';
+import Loading from '../components/Loading/Loading'
 import Contact from '../components/Contact/Contact';
 import './App.css';
+const APOD = lazy(() => import ('../components/Pages/APOD/APOD'));
+const Photography = lazy(() => import ('../components/Pages/Photography/Photography'));
+const GraphicDesign = lazy(() => import('../components/Pages/GraphicDesign/GraphicDesign'));
+const TheIndirectRoute = lazy(() => import('../components/Pages/Trips/TheIndirectRoute/TheIndirectRoute'));
+const ChernobylTrip = lazy(() => import('../components/Pages/Trips/ChernobylTrip/ChernobylTrip'));
+const LegendeKragujevca = lazy(() => import('../components/Pages/Trips/LegendeKragujevca/LegendeKragujevca'));
 
 
 const initialState = {
@@ -92,20 +93,22 @@ class App extends Component {
         <ErrorBoundary>
           <NavigationBar toggleContactCard={this.toggleContactCard} />
           <Homepage toggleContactCard={this.toggleContactCard} />
-          <Routes>
-            <Route element={<PageLayout />} >
-              <Route path="/" element={""} />
-              <Route path="/about-me" element={<AboutMe />} />
-              <Route path="/apod" element={<APOD toggleFullscreen={this.toggleFullscreen}/>} />
-              <Route path="/web-development" element={<WebDevelopment />} />
-              <Route path="/graphic-design" element={<GraphicDesign />} />
-              <Route path="/photography" element={<Photography gallery={gallery} onGalleryChange={this.onGalleryChange}/>} />
-              <Route path="/the-indirect-route" element={<TheIndirectRoute toggleFullscreen={this.toggleFullscreen}/>} />
-              <Route path="/unpeacefull-atom" element={<ChernobylTrip  toggleFullscreen={this.toggleFullscreen}/>} />
-              <Route path="/legende-kragujevca" element={<LegendeKragujevca toggleFullscreen={this.toggleFullscreen}/>} />
-            </Route>
-            <Route path="*" element={<ErrorBoundary />} />
-          </Routes>
+          <Suspense fallback={<Loading />}>
+            <Routes>
+              <Route element={<PageLayout />} >
+                <Route path="/" element={""} />
+                <Route path="/about-me" element={<AboutMe />} />
+                <Route path="/apod" element={<APOD toggleFullscreen={this.toggleFullscreen}/>} />
+                <Route path="/web-development" element={<WebDevelopment />} />
+                <Route path="/graphic-design" element={<GraphicDesign />} />
+                <Route path="/photography" element={<Photography gallery={gallery} onGalleryChange={this.onGalleryChange}/>} />
+                <Route path="/the-indirect-route" element={<TheIndirectRoute toggleFullscreen={this.toggleFullscreen}/>} />
+                <Route path="/unpeacefull-atom" element={<ChernobylTrip  toggleFullscreen={this.toggleFullscreen}/>} />
+                <Route path="/legende-kragujevca" element={<LegendeKragujevca toggleFullscreen={this.toggleFullscreen}/>} />
+              </Route>
+              <Route path="*" element={<ErrorBoundary />} />
+            </Routes>
+          </Suspense>
           <Contact />
         </ErrorBoundary>
       </div>
