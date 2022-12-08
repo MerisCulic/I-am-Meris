@@ -7,23 +7,103 @@
     <link rel="icon" type="image/png" sizes="16x16" href="%PUBLIC_URL%/favicon-16x16.png">
     <link rel="manifest" href="%PUBLIC_URL%/site.webmanifest">
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <!-- CSS ANIMATE-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta
       name="description"
-      content="Web site created using create-react-app"
+      content="Web site created using create-react-app for career change purposes"
     />
 
-    <!-- CSS ANIMATE-->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
- 
+    <style>
+
+      body {
+        margin: 0;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+          'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+          sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        font-family: 'Orbitron', sans-serif;
+        background-color: #222222;
+        background-image: url("/Images/woodentexture.jpg");
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      #loadingAnimation {
+        z-index: 100;
+        height: auto;
+        width: 100vw;
+        position: fixed;
+        left: 15%;
+        bottom: 0;
+        transform-origin: center;
+        transform: rotate(10deg);
+      }
+
+      #loadingNotice {
+        position: fixed;
+        top: 50%;
+        left: 20%;
+        width: auto;
+        height: 300px;
+        transform: rotate(-7deg);
+      }
+
+      #loadingText {
+        height: 100%;
+        width: auto;
+      }
+
+      #loadingCircle {
+        height: 100px;
+        width: auto;
+        position: fixed;
+        bottom: 10%;
+        left: 40%;
+        animation: rotation 2s linear infinite;
+      }
+
+      #loadingImage {
+        height: 100%;
+        width: 100%;
+      }
+
+      @keyframes hideLoading {
+        0% {left: 15%; transform: rotate(10deg);}
+        100% {left: 200vw; transform: rotate(40deg);}
+      }
+
+      @keyframes rotation {
+        from {transform: rotate(0deg);}
+        to {transform: rotate(360deg);}
+      }
+
+      #root:not(:empty) + #loadingAnimation {
+        animation: hideLoading 2s 1s forwards ease-in;
+      }
+
+      @media (max-width: 820px) {
+        #loadingAnimation {
+          display: none;
+        }
+      }
+    </style>
+
     <title>Meris</title>
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
+    <div id="loadingAnimation">
+      <div id="loadingNotice">
+        <img id="loadingText" src=\Images\LoadingPaper.png alt="Loading text"/>
+        <img id="loadingCircle" src=\Images\LoadingCircle.png alt="Loading circle"/>
+      </div>
+      <img id="loadingImage" src=\Images\tableCloth.png alt="Table Cloth"/>
+    </div>
   </body>
 </html>

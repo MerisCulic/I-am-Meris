@@ -13,7 +13,7 @@
     max-width: 120px;
     height: auto;
     animation: 
-        slideInLeft 2s backwards 1s;
+        slideInLeft 2s backwards 2s;
 }
 
 #finger {
@@ -27,8 +27,8 @@
 
 .slideInOut {
     animation: 
-        slideInLeft 2s backwards 1s,
-        slideOutLeft 0.5s forwards 3.5s; 
+        slideInLeft 2s backwards 2s,
+        slideOutLeft 0.5s forwards 4.5s; 
 }
 
 .dropbtn {
