@@ -19,7 +19,6 @@ const LegendeKragujevca = lazy(() => import('../components/Pages/Trips/LegendeKr
 
 
 const initialState = {
-  isLoading: true,
   gallery: 'weddings',
   isContactVisible: false
 }
@@ -29,10 +28,6 @@ class App extends Component {
   constructor() {
     super()
     this.state = initialState
-  }
-
-  componentDidMount() {
-    this.setState({ isLoading: false });
   }
 
   onGalleryChange = (gallery) => {
@@ -71,17 +66,14 @@ class App extends Component {
   
 
   render() {
-    const {isLoading, gallery, isContactVisible} = this.state;
+    const {gallery, isContactVisible} = this.state;
 
-    if(isLoading){
-      return null;
-    } else {
-      /* Remove initial Loading animation element */
-      const loadingScreen = document.getElementById("loadingAnimation");
-      setTimeout(() => {
-        loadingScreen.style.display = "none";
-      }, "3500")
-    }
+ 
+    /* Remove initial Loading animation element */
+    const loadingScreen = document.getElementById("loadingAnimation");
+    setTimeout(() => {
+      loadingScreen.style.display = "none";
+    }, "3500")
 
     /* Hide small screen dropdown menu and/or contact card when off-clicking */
     window.onclick = (event) => {

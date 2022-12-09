@@ -46,12 +46,14 @@
       }
 
       #loadingNotice {
+        z-index: 100;
         position: fixed;
         top: 50%;
         left: 20%;
         width: auto;
         height: 300px;
         transform: rotate(-7deg);
+        transform-origin: top right;
       }
 
       #loadingText {
@@ -74,8 +76,18 @@
       }
 
       @keyframes hideLoading {
-        0% {left: 15%; transform: rotate(10deg);}
-        100% {left: 200vw; transform: rotate(40deg);}
+        0% {left: 15%;}
+        100% {left: 200vw;}
+      }
+
+      @keyframes tilt {
+        0% {transform: rotate(-7deg);}
+        100% {transform: rotate(0deg);}
+      }
+
+      @keyframes skewImage {
+        0% {transform: skew(0deg, 0deg);}
+        100% {transform: skew(-15deg, -10deg);}
       }
 
       @keyframes rotation {
@@ -85,6 +97,14 @@
 
       #root:not(:empty) + #loadingAnimation {
         animation: hideLoading 2s 1s forwards ease-in;
+      }
+
+      #root:not(:empty) + #loadingAnimation #loadingImage  {
+        animation: skewImage 2s 1s forwards ease-in;
+      }
+
+      #root:not(:empty) + #loadingAnimation #loadingNotice  {
+        animation: tilt 2s 1s forwards ease-in;
       }
 
       @media (max-width: 820px) {

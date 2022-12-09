@@ -1,6 +1,6 @@
 {
   "name": "i-am-meris",
-  "version": "2.3.2",
+  "version": "2.3.3",
   "private": true,
   "engines": {
     "node": "14.x"
